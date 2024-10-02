@@ -52,7 +52,7 @@ nav {
 
 .nav-links a {
     font-family: 'Nunito', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     color: white;
     text-decoration: none;
     font-size:1.5rem;
@@ -63,6 +63,7 @@ nav {
 
 .nav-links a:hover {
     color: #49D3FF;
+    font-weight: 900;
 }
 
 /* Hamburger menu styles */
@@ -124,7 +125,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* Full viewport height */
+    min-height: 100vh;
 
     /* Layering the backgrounds */
     background: 
@@ -132,10 +133,9 @@ nav {
         linear-gradient(to right, rgba(0, 28, 48, 0.7), rgba(52, 12, 24, 0.7)), /* Gradient */
         url('../Images/Home_Page/BG WEBSITE.gif') no-repeat center center/cover; /* GIF background */
     background-attachment: fixed, scroll, scroll;
-    animation: bg-animation 5s linear infinite;
+    animation: bg-animation 3s linear infinite;
 }
 
-/* Optional: Slow background movement for the GIF */
 @keyframes bg-animation {
     0% {
         background-position: 0 0, 0 0, 0 0; /* Static grid, moving GIF */
