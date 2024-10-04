@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Borel&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
 * {
     margin: 0;
     padding: 0;
@@ -133,7 +134,7 @@ nav {
         linear-gradient(to right, rgba(0, 28, 48, 0.7), rgba(52, 12, 24, 0.7)), /* Gradient */
         url('../Images/Home_Page/BG WEBSITE.gif') no-repeat center center/cover; /* GIF background */
     background-attachment: fixed, scroll, scroll;
-    animation: bg-animation 3s linear infinite;
+    animation: bg-animation 2s linear infinite;
 }
 
 @keyframes bg-animation {
@@ -194,45 +195,69 @@ h1 span {
     transform: translateY(30px);
     animation: fadeInUp 2s ease-in-out forwards;  
 }
+
 .resume-button {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
     display: inline-flex;
+    max-height: 67px;
+    max-width: 198px;
     align-items: center;
-    padding: 10px 15px;
-    color: #fff;
-    border: 2px solid #fff;
+    padding: 10px 20px;
+    background-color: #202020;
+    border: 1px solid #ffffff;
     border-radius: 10px;
-    font-size: 1.5rem;
     text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s ease;
 }
 
-/* Icon and Text */
+/* Button Text */
 .resume-button .button-text {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #ffffff;
+    font-size: 24px;
     margin-right: 10px;
+    font-weight: 400;
 }
 
-.resume-button .fa-arrow-up-right-from-square {
-    font-size: 1.1rem;
-    color: #fff;
-    transition: color 0.3s ease;
+.resume-button .icon-box {
+    width: 30px;  
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s ease;
 }
 
-/* Hover Effect */
+/* Button Icon (Arrow Image) */
+.resume-button .icon-box img {
+    width: 14px;
+    height: 14px;
+    filter: invert(1);
+    transition: filter 0.3s ease;
+}
+
+/* Hover Effect for Button */
 .resume-button:hover {
     background-color: #49D3FF; /* Change background to white */
-    color: #000; /* Text color turns black */
-    border-color: #fff; /* Maintain border color */
+    color: #000000; /* Text color to black */
+    border-color: #49D3FF; /* Change border to white */
 }
 
-.resume-button:hover .fa-arrow-up-right-from-square {
-    color: #000;
-}
-
+/* Hover Effect for Text */
 .resume-button:hover .button-text {
-    color: #000; 
+    color: #000000; /* Text turns black on hover */
+}
+
+/* Hover Effect for Box and Arrow */
+.resume-button:hover .icon-box {
+    border-color: #000000; /* Box border turns black */
+    background-color: #49D3FF; /* Optional: background change */
+}
+
+.resume-button:hover .icon-box img {
+    filter: invert(0); /* Arrow turns black on hover */
 }
 .changing-text {
     text-align: center;

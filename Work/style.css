@@ -50,10 +50,11 @@ nav {
 }
 
 .nav-links a {
-    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size:1.5rem;
     padding: 10px;
     transition: color 0.3s;
     padding-right: 60px;
@@ -61,6 +62,7 @@ nav {
 
 .nav-links a:hover {
     color: #49D3FF;
+    font-weight: 900;
 }
 
 /* Card Section */
@@ -109,25 +111,62 @@ nav {
     margin-bottom: 100px;
 }
 
-.card-content .button {
+/* Button styling for both buttons */
+.button {
     font-family: 'Nunito Sans', sans-serif;
+    max-width: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 400;
     font-size: 24px;
+    margin-right: 10px;
     background-color: transparent;
     color: white;
     border: 1px solid #ffffff;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     text-decoration: none;
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-    transform: scale(1); /* Normal size */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.card-content .button:hover {
-    background-color: #49D3FF;
-    color: black;
-    transform: scale(2);
+.button:hover {
+    background-color: #49D3FF; /* Change background to white */
+    color: #000000; /* Text color to black */
+    border-color: #49D3FF; /* Change border to white */
 }
+
+/* Icon Box */
+.icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px; /* Add space between text and icon */
+    border: 1px solid white;
+    border-radius: 4px; /* Rounded box */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Invert the black arrow icon to white */
+.icon-box img {
+    width: 16px; /* Adjust icon size */
+    height: 16px;
+    filter: invert(1); /* Inverts color from black to white */
+    transition: filter 0.3s ease;
+}
+
+/* Hover effect for the icon and its box */
+.button:hover .icon-box {
+    border-color: #000000; /* Box border turns black */
+    background-color: #49D3FF; /* Optional: background change */
+}
+
+.button:hover .icon-box img {
+    filter: invert(0); /* Reverts the color back to black on hover */
+}
+
 
 .card-content .tags-p2{
     color:#A193F2;
