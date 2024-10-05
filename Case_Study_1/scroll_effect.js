@@ -1,24 +1,22 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.nav-link');
-  
-    window.addEventListener('scroll', () => {
-      let currentSection = '';
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('main section');
+  const sidebarLinks = document.querySelectorAll('#sidebar-list a');
 
-    
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (scrollY >= sectionTop - 60) {
-          currentSection = section.getAttribute('id');
-        }
-      });
+  window.addEventListener('scroll', () => {
+    let current = '';
 
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${currentSection}`) {
-          link.classList.add('active');
-        }
-      });
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      if (scrollY >= sectionTop - 60) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    sidebarLinks.forEach((link) => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${current}`) {
+        link.classList.add('active');
+      }
     });
   });
-  
+});
