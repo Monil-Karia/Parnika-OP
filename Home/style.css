@@ -134,7 +134,7 @@ nav {
         linear-gradient(to right, rgba(0, 28, 48, 0.7), rgba(52, 12, 24, 0.7)), /* Gradient */
         url('../Images/Home_Page/BG WEBSITE.gif') no-repeat center center/cover; /* GIF background */
     background-attachment: fixed, scroll, scroll;
-    animation: bg-animation 2s linear infinite;
+    animation: bg-animation 1s linear infinite;
 }
 
 @keyframes bg-animation {
