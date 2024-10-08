@@ -9,13 +9,13 @@
 }
 
 body {
+    font-family: 'Nunito Sans', sans-serif; 
     background: 
         url('../Images/Home_Page/Grid_Home.png') repeat, /* Static Grid image */
         linear-gradient(to right, rgba(0, 28, 48, 0.7), rgba(52, 12, 24, 0.7)), /* Gradient */
         url('../Images/Work_Page/work_bg.png') no-repeat center center/cover;
     background-attachment: fixed, scroll, scroll;
-    animation: bg-animation 5s linear infinite;
-    font-family: 'Nunito Sans', sans-serif; 
+    animation: bg-animation 1s linear infinite;
     color: white;
 }
 
@@ -72,19 +72,57 @@ nav {
 section {
     margin-bottom: 100px; /* Space between sections */
 }
-h2 {
-    color: #ffffff;
+
+.back-button {
+    margin-left: 40px; /* Adjust margin for better alignment */
+    margin-bottom: 20px;
+    margin-top: -9px; /* Reduced negative margin to avoid overlap */
+    padding: 8px 12px; /* Add padding for more click area */
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Slightly reduce gap for better balance */
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+  
+  /* Style the arrow only with a border */
+.back-button .arrow {
+    padding: 4px;
+    border: 2px solid #fff; /* Border around the arrow */
+    display: inline-flex; /* Ensures the arrow image stays centered */
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+  
+.back-button .arrow img.arrow-icon {
+    width: 16px; /* Adjust arrow size as needed */
+    height: 16px; /* Adjust arrow size as needed */
+    filter: invert(1); /* Inverts colors for visibility */
 }
 
+.back-button .button-text {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 4px;
+    color: #9C9C9C;
+}
+    
+.back-button:hover .button-text {
+    text-decoration: underline;
+}
 /* Sticky Sidebar */
 .sticky-sidebar {
     position: -webkit-sticky;
     position: sticky;
-    top: 50px;
-    width: 200px;
+    top: 150px;
+    width: 250px;
     background-color: #202020;
     padding: 20px;
-    height: 700px;
+    max-height: 650px;
     border-radius: 20px;
     backdrop-filter: blur(800px);
     border: 1px solid #5C50B4
@@ -121,23 +159,434 @@ h2 {
     font-weight: 400;
     color: #888;
     transition: color 0.3s ease;
-  }
+}
   
   /* Active Link */
-  .sticky-sidebar li a.active .bullet-circle {
-    background-color:  #49D3FF;
+.sticky-sidebar li a.active .bullet-circle {
+background-color:  #49D3FF;
+}
+  
+.sticky-sidebar li a.active .link-text {
+color: #49D3FF; /* Active text color */
+font-weight: bold;
+}
+  
+  /* Hover Effect */
+.sticky-sidebar li a:hover .bullet-circle {
+background-color: #49D3FF; /* Hover circle color */
+}
+  
+.sticky-sidebar li a:hover .link-text {
+color: #49D3FF;
+}
+
+#overview {
+    margin-left: 50px;
+}
+
+.overview-image {
+    width: 1452px; /* Fixed width */
+    border-radius: 20px; /* Rounded corners */
+}
+
+.project-info {
+    margin-top: 44px;
+    padding: 20px;
+    background-color: #171717;
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: 2px 2px 20px 1px #FFFFFF1A;
+    width:1452px;
+}
+
+/* Problem Statement */
+.problem-statement {
+    margin-bottom: 30px;
+    padding: 20px;
+    max-width: 1452px;
   }
   
-  .sticky-sidebar li a.active .link-text {
-    color: #49D3FF; /* Active text color */
+.problem-title {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: #7b4bda;
+    margin-bottom: 10px;
+}
+
+.problem-description {
+    font-size: 35px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 14px;
+}
+
+.problem-detail {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #C5C5C5;
+}
+
+.project-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 61px;
+    width:1452px;
+}
+
+.project-details div {
+    background-color: #171717;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 1px #FFFFFF1A;
+    max-height: 285px;
+}
+.role{
+    width: 465px;
+}
+.details{
+    width: 379px;
+}
+.deliverables{
+    width: 465px;
+}
+h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    color: #5E4FBA;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #E0E0E0;
+    margin-bottom: 10px;
+}
+  
+  li strong {
     font-weight: bold;
   }
   
-  /* Hover Effect */
-  .sticky-sidebar li a:hover .bullet-circle {
-    background-color: #49D3FF; /* Hover circle color */
+  /* Image icons for tools */
+  .details img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
   }
-  
-  .sticky-sidebar li a:hover .link-text {
-    color: #49D3FF;
+
+@media (max-width: 768px) {
+    .project-details {
+        flex-direction: column;
+    }
+
+    .project-details div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+.solution-sneak-peak {
+    font-family: 'Nunito Sans', sans-serif;
+    max-width: 1452px;
+    padding: 80px; /* Optional: Adjust padding as needed */
+    color: #fff;
+    background-color: #171717;
+    box-shadow: 2px 2px 20px 1px #FFFFFF1A;
+    margin-top: 62px;
+    border-radius: 20px;
+}
+.solution-sneak-peak h2{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: #7b4bda;
+    margin: 0 0 60px -40px;
+}
+
+.solution-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.solution-item {
+    display: flex;
+    justify-content: space-between; /* Space between image and text */
+    align-items: center;
+    max-width: 1452px; /* Adjust as per your requirement */
+}
+.solution-image {
+    flex: 0 0 35%; /* Image will take 35% of the space */
+}
+
+.solution-image img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+.solution-text {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    padding: 10px;
+}
+
+.heading-wrapper {
+    display: flex;
+    align-items: center; /* Align number and heading on the same line */
+    justify-content: center;
+}
+
+.number {
+    flex-shrink: 0; /* Prevent the number from shrinking */
+    margin-right: 10px; /* Space between number and text */
+}
+
+.number span {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 96px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-right: 30px;
+}
+
+.text h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.solution-item .right-side{
+    justify-content: flex-end;
+    padding: 0 0 0 160px;
+}
+.solution-text p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #919191;
+    margin-left: 100px;
+}
+@media (max-width: 768px) {
+    .solution-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+#designprocess{
+    margin:50px;
+    margin-top: 290px;
+}
+.design-image{
+    max-width: 1452px; /* Fixed width */
+    border-radius: 20px; /* Rounded corners */
+}
+
+#deskresearch{
+    margin:50px;
+}
+
+.desk-research {
+    font-family: 'Nunito Sans', sans-serif;
+    max-width: 1452px;
+    padding: 80px;
+    color: #fff;
+    background-color: #171717;
+    box-shadow: 2px 2px 20px 1px #FFFFFF1A;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.desk-research h2 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #7b4bda;
+    margin: 0 0 60px -40px;
+}
+
+.desk-research .desk-text {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.74px;
+    color: #C5C5C5;
+    margin-bottom: 80px;
+
+}
+
+.research-overview {
+    margin-top: 20px;
+}
+
+.research-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.research-item {
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+    align-items: center;
+    background-color: #171717;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.research-content {
+    max-width: 60%;
+}
+
+.research-content h3 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+
+.research-content p {
+    font-size: 24px;
+    font-weight: 400;
+    color: #C5C5C5;
+}
+
+.research-image img{
+    width: 167px;
+    height: 160px;
+    text-align: right;
+}
+
+.overview-icon {
+    display: block;
+    width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+
+.divider {
+    margin: 40px 0;
+    border: 0;
+    height: 2px;
+    background: #DCDCDC;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.insights {
+    text-align: left;
+}
+
+.insights h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 42px;
+    color: #5E4FBA;
+    margin-bottom: 25px;
+}
+
+.insight-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.insight-item {
+    width: 30%;
+    text-align: left;
+}
+
+.insight-number {
+    font-size: 96px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.insight-item h4 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 42px;
+    margin-bottom: 10px;
+    color:#FFFFFF;
+}
+
+.insight-item p {
+    font-size: 24px;
+    font-weight: 400;
+    color: #919191;
+}
+.source-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.source{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #C5C5C5;
+    border: 0.3px solid #3C3C3C;
+    background: #3C3C3C4D;
+    padding: 10px 20px;
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 75px; /* Adjust spacing from the section above */
+
+}
+.source-container strong {
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 42px;
+    font-weight: 700; /* Bold font for the "Source" */
+    color: #FFFFFF;
+}
+
+
+.bold{
+    color:white;
+}
+#useranalysis{
+    margin:50px;
+}
+#stakeholders{
+    margin:50px;
+}
+#primaryresearch{
+    margin:50px;
+}
+#howmightwe{
+    margin:50px;
+}
+#infoarch{
+    margin:50px;
+}
+#visualdesign{
+    margin:50px;
+}
+#usertesting{
+    margin:50px;
+}
+#learnings{
+    margin:50px;
+}
+#ideation{
+    margin:50px;
+}
+#finalconcepts{
+    margin:50px;
 }
