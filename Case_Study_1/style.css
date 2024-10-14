@@ -423,7 +423,6 @@ li {
     line-height: 32.74px;
     color: #C5C5C5;
     margin-bottom: 80px;
-
 }
 
 .research-overview {
@@ -545,7 +544,7 @@ li {
     padding: 10px 20px;
     border-radius: 10px; /* Rounded corners */
     margin-top: 75px; /* Adjust spacing from the section above */
-
+    
 }
 .source-container strong {
     font-family: Nunito Sans;
@@ -560,15 +559,240 @@ li {
 .bold{
     color:white;
 }
-#useranalysis{
+/* General styling for the section */
+#user-analysis {
     margin:50px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #C5C5C5;
+    background-color: #171717;
+    padding: 80px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 1px #FFFFFF1A;
+    max-width: 1452px;
 }
+
+#user-analysis h2 {
+    font-size: 30px;
+    margin: 0 0 60px -40px;
+    font-weight: 900;
+    line-height: 40.92px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #7b4bda;
+}
+
+
+.user-analysis-section p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.74px;
+    color: #C5C5C5;
+    margin-bottom: 100px;
+}
+/* Container for each analysis item */
+.analysis-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 150px;
+}
+
+/* Container for the number and text */
+.number-text {
+    display: flex;
+    align-items: flex-start;
+    max-width: 70%;
+}
+
+/* Number styling */
+.number {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 130.94px;    
+    color: #FFFFFF;
+    margin-right: 25px;
+}
+
+/* Text styling */
+.number-text p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.74px;
+    color: #919191;
+}
+.number-text strong {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 42px;
+    font-weight: 700; /* Bold font for the "Source" */
+    color: #FFFFFF;
+}
+
+.chart img {
+    margin-top: -20px;
+    max-width: 400px;
+}
+
+/* General Styling for the Section */
 #stakeholders{
     margin:50px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #C5C5C5;
+    background-color: #171717;
+    padding: 80px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 1px #FFFFFF1A;
+    max-width: 1452px;
 }
-#primaryresearch{
+
+#stakeholders h2 {
+    font-size: 30px;
+    margin: 0 0 60px -40px;
+    font-weight: 900;
+    line-height: 40.92px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #7b4bda;
+}
+
+.stakeholder-section p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.74px;
+    color: #C5C5C5;
+    margin-bottom: 100px;
+}
+#stakeholders h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.stakeholder-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 200px; /* Adds space between the two sections */
+}
+
+/* Individual Stakeholder Box */
+.stakeholder {
+    border-radius: 8px;
+    width: 35%;
+}
+.stakeholder-container p{
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #919191;
+}
+
+.stakeholder strong {
+    color: #FFFFFF; /* Bold text color */
+}
+/* General Styling for Section */
+#primary-research {
     margin:50px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #C5C5C5;
+    background-color: #171717;
+    padding: 80px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 1px #FFFFFF1A;
+    max-width: 1452px;
 }
+
+#primary-research h2 {
+    font-size: 30px;
+    margin: 0 0 60px -40px;
+    font-weight: 900;
+    line-height: 40.92px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #7b4bda;
+}
+
+#primary-research h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+#primary-research hr {
+    border: 0;
+    height: 1px;
+    background: #444;
+    margin: 25px 0;
+}
+
+/* Method of Research Section */
+.method-research {
+    margin-bottom: 20px;
+}
+
+.research-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.research-details .left, .research-details .right {
+    width: 48%;
+}
+
+.research-details p {
+    margin-bottom: 10px;
+}
+
+.research-details strong {
+    color: #FFFFFF; /* White for bold text */
+}
+
+/* Objective of the Research Section */
+.objective-research {
+    margin-top: 20px;
+}
+
+.objectives-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.objective-card {
+    background-color: #1E1E1E;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    width: 32%;
+}
+
+.objective-card h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.objective-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.objective-card ul li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.objective-card ul li strong {
+    color: #7D5CE5; /* Use purple for emphasis */
+}
+
 #howmightwe{
     margin:50px;
 }
