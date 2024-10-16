@@ -1029,6 +1029,22 @@ li {
     font-family: 'Nunito Sans', sans-serif;
     color: #7b4bda;
 }
+.perspective{
+    margin-bottom: 70px;
+}
+.perspective h3{
+    color: #919191;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.74px;
+    margin-bottom: 20px;
+}
+.perspective p{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40.92px;
+    color:#FFFFFF;
+}
 #infoarch{
     margin:50px;
 }
