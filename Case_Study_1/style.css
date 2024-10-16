@@ -260,12 +260,11 @@ h4 {
 }
 
 
-ul {
-    list-style: none;
+#overview ul{
     padding: 0;
     margin: 0;
+    list-style-type: none;
 }
-
 li {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
@@ -555,7 +554,6 @@ li {
     color: #FFFFFF;
 }
 
-
 .bold{
     color:white;
 }
@@ -715,23 +713,65 @@ li {
 
 #primary-research h3 {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 35px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 600;
     line-height: 42px;
-    color: #FFFFFF;
-    margin-bottom: 20px;
+    color:#5E4FBA;
+    margin-bottom: 25px;
 }
 
-#primary-research hr {
+.horizontal-hr{
     border: 0;
     height: 1px;
-    background: #444;
-    margin: 25px 0;
+    border: 1px solid #DCDCDC;
+    margin: 40px 0;
+}
+.vertical-hr{
+    left: 50%;
+    height: 330px;
+    border: 1px solid #DCDCDC;
+    margin-right: 120px;
+}
+.left,.right strong{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32.74px;
+    color: #FFFFFF;
 }
 
+.left {
+    width: 20%;
+}
+.left-row-1{
+    margin-bottom: 100px;
+}
+.left,.right p{
+    font-size: 24px;
+    font-weight: 400;    
+}
+.right{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.first-row{
+    display: flex;
+    gap: 170px;
+    margin-bottom: 40px;
+}
+.second-row{
+    display: flex;
+    gap: 130px;
+    margin-bottom: 30px;
+}
+.third-row{
+    display: flex;
+    gap: 100px;
+    margin-bottom: 30px;
+}
 /* Method of Research Section */
 .method-research {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .research-details {
@@ -739,11 +779,6 @@ li {
     justify-content: space-between;
     gap: 40px;
 }
-
-.research-details .left, .research-details .right {
-    width: 48%;
-}
-
 .research-details p {
     margin-bottom: 10px;
 }
@@ -754,47 +789,245 @@ li {
 
 /* Objective of the Research Section */
 .objective-research {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .objectives-container {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 25px;
 }
 
-.objective-card {
-    background-color: #1E1E1E;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+.objective-card-1 {
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgba(60, 60, 60, 0.1);
+    border: 1px solid #A193F2;
     width: 32%;
 }
-
-.objective-card h4 {
-    font-size: 18px;
-    font-weight: 700;
+.objective-card-1 h4{
+    text-align: center;
     color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40.92px;
+}
+.objective-card-2 {
+    padding: 30px;
+    background-color: rgba(60, 60, 60, 0.1);
+    border-radius: 20px;
+    border: 1px solid #4DD0E1;
+    width: 32%;
+}
+.objective-card-2 h4{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40.92px;
+}
+.objective-card-3 {
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #3C3C3C1A;
+    border: 1px solid #516CBE;
+    width: 32%;
+    background-color: rgba(60, 60, 60, 0.1);
+}
+.objective-card-3 h4{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40.92px;
+}
+
+.objective-card-1 ul li {
+    font-size: 24px;
+    line-height: 32.74px;
+    margin-bottom: 10px;
+    color: #919191;
+}
+
+.objective-card-1 ul li strong {
+    color: #ffffff; /* Use purple for emphasis */
+}
+.objective-card-2 ul li {
+    font-size: 24px;
+    line-height: 32.74px;
+    margin-bottom: 10px;
+    color: #919191;
+}
+
+.objective-card-2 ul li strong {
+    color: #ffffff; /* Use purple for emphasis */
+}
+.objective-card-3 ul li {
+    font-size: 24px;
+    line-height: 32.74px;
+    margin-bottom: 10px;
+    color: #919191;
+}
+
+.objective-card-3 ul li strong {
+    color: #ffffff; /* Use purple for emphasis */
+}
+
+.horizontal-hr-2{
+    border: 0;
+    height: 1px;
+    border: 1px solid #DCDCDC;
+    margin: 96px 0;
+}
+.journey-steps {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+.step {
+    width: 20%;
+    text-align: center;
+}
+
+.step p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    line-height: 34.74px;
+    margin-top: 10px;
+    font-size: 24px;
+    color: #919191;
+}
+
+/* Icon styling (replace with actual images) */
+.icon {
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+/* Custom icons for each step */
+.query-icon {
+    background-image: url('../Images/Case_Study_1/User_jouney_icon.png'); /* Replace with your actual image path */
+}
+
+.uncomfortable-icon {
+    background-image: url('../Images/Case_Study_1/chat-bot.png'); /* Replace with your actual image path */
+}
+
+.internet-icon {
+    background-image: url('../Images/Case_Study_1/screen-share.png '); /* Replace with your actual image path */
+}
+
+.invalid-info-icon {
+    background-image: url('../Images/Case_Study_1/paper-scroll.png'); /* Replace with your actual image path */
+}
+
+/* Styling for the emotions bar */
+.emotions-bar {
+    font-family: 'Nunito Sans', sans-serif;
+    background: linear-gradient(91.09deg, rgba(194, 184, 255, 0.1) 0.51%, rgba(182, 172, 246, 0.1) 99.21%);
+    border: 1px solid #A193F2;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 32.74px;
+}
+
+.step strong {
+    color: #ffffff; /* Use purple for emphasis */
+}
+.emotions-bar span {
+    padding: 5px 10px;
+}
+.small-circle{
+    margin-top:15px;
+    border-radius: 50%;
+    background-color: #5E4FBA;
+    height: 12px;
+    width: 12px;
+}
+
+/* Container for insights */
+
+.insights-container h2 {
+    color: #726ed3;
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* Grid for insights */
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.insight {
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    width:70%;
+}
+
+/* Numbers */
+.insight h5 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 130.94px;
+    color: #ffffff;
+    top: -20px;
+    left: -20px;
+}
+
+.insight h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #ffffff;
     margin-bottom: 10px;
 }
 
-.objective-card ul {
-    list-style-type: none;
-    padding-left: 0;
+.insight p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.74px;
+    color:#919191;    
 }
 
-.objective-card ul li {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 10px;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .insights-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
-.objective-card ul li strong {
-    color: #7D5CE5; /* Use purple for emphasis */
-}
-
-#howmightwe{
+#how-might-we{
     margin:50px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #C5C5C5;
+    background-color: #171717;
+    padding: 80px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 1px #FFFFFF1A;
+    max-width: 1452px;
+}
+#how-might-we h2 {
+    font-size: 30px;
+    margin: 0 0 60px -40px;
+    font-weight: 900;
+    line-height: 40.92px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #7b4bda;
 }
 #infoarch{
     margin:50px;
