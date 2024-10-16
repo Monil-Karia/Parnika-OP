@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -336,7 +337,7 @@ li {
     display: flex;
     flex-direction: column; /* Stack items vertically */
     justify-content: center; /* Vertically center the content */
-    align-items: center; /* Horizontally center the content */
+    align-items: flex-start; /* Horizontally center the content */
     padding: 10px;
 }
 
@@ -345,7 +346,6 @@ li {
     align-items: center; /* Align number and heading on the same line */
     justify-content: center;
 }
-
 .number {
     flex-shrink: 0; /* Prevent the number from shrinking */
     margin-right: 10px; /* Space between number and text */
@@ -1134,13 +1134,13 @@ li {
     font-weight: 700;
 }
 /* Right side (image of the graph) */
-.right-side {
+.right-side-ideation {
     flex: 1;
     display: flex;
     justify-content: center;
 }
 
-.right-side img {
+.right-side-ideaition img {
     max-width: 100%;
     height: auto;
 }
@@ -1198,11 +1198,50 @@ li {
     color:#5E4FBA;
     margin-bottom: 25px;
 }
+#infoarch p{
+    color: #C5C5C5;
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.74px;
+    margin-bottom: 30px;
+}
 #infoarch{
     margin:50px;
 }
 #visualdesign{
     margin:50px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #C5C5C5;
+    background-color: #171717;
+    padding: 80px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 1px #FFFFFF1A;
+    max-width: 1452px;
+}
+#visualdesign h2 {
+    font-size: 30px;
+    margin: 0 0 60px -40px;
+    font-weight: 900;
+    line-height: 40.92px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #7b4bda;
+}
+#visualdesign h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 42px;
+    color:#5E4FBA;
+    margin-bottom: 25px;
+}
+#visualdesign p{
+    color: #C5C5C5;
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.74px;
+    margin-bottom: 30px;
 }
 #usertesting{
     margin:50px;
@@ -1210,9 +1249,22 @@ li {
 #learnings{
     margin:50px;
 }
-#ideation{
+#learnings{
     margin:50px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #C5C5C5;
+    background-color: #171717;
+    padding: 80px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 1px #FFFFFF1A;
+    max-width: 1452px;
 }
-#finalconcepts{
-    margin:50px;
+
+#learnings p{
+    color: #C5C5C5;
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.74px;
+    margin-bottom: 30px;
 }
