@@ -69,6 +69,10 @@ nav {
     font-weight: 900;
 }
 
+.nav-links .work-active{
+    color: #49D3FF;
+    font-weight: 900;
+}
 .container {
     display: flex;
     margin-top: 150px; /* Leave space for sticky header */
@@ -464,11 +468,14 @@ li {
     font-weight: 400;
     color: #C5C5C5;
 }
-
+.research-image{
+    padding:40px;
+    border-radius: 20px;
+    border: 0.1px solid #A193F2;
+}
 .research-image img{
-    width: 167px;
-    height: 160px;
-    text-align: right;
+    width: 70px;
+    height: 70px;
 }
 
 .overview-icon {
@@ -563,7 +570,6 @@ li {
 }
 /* General styling for the section */
 #user-analysis {
-    margin-left:50px;
     font-family: 'Nunito Sans', sans-serif;
     color: #C5C5C5;
     background-color: #171717;
@@ -591,7 +597,7 @@ li {
     font-weight: 400;
     line-height: 32.74px;
     color: #C5C5C5;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 /* Container for each analysis item */
 .analysis-item {
@@ -604,7 +610,7 @@ li {
 /* Container for the number and text */
 .number-text {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     max-width: 70%;
 }
 
@@ -624,6 +630,7 @@ li {
     font-weight: 400;
     line-height: 32.74px;
     color: #919191;
+    margin-top:13%;
 }
 .number-text strong {
     font-size: 30px;
@@ -924,6 +931,7 @@ li {
 }
 
 .uncomfortable-icon {
+    margin-top: 120px;
     background-image: url('../Images/Case_Study_1/chat-bot.png'); /* Replace with your actual image path */
 }
 
@@ -932,6 +940,7 @@ li {
 }
 
 .invalid-info-icon {
+    margin-top: 120px;
     background-image: url('../Images/Case_Study_1/paper-scroll.png'); /* Replace with your actual image path */
 }
 
@@ -1177,6 +1186,7 @@ li {
 
 .concept-development p{
     margin-top: 40px;
+    margin-bottom: 40px;
     font-size: 20px;
     font-weight: 400;
     line-height: 32.74px;
@@ -1195,9 +1205,9 @@ li {
   
   /* Card styles */
   .moscow-card {
-    padding: 20px;
+    padding: 10px;
     border-radius: 15px;
-    background: #3C3C3C1A;
+    background-color: rgba(60, 60, 60, 0.1);
   }
   
   /* Specific card color themes */
@@ -1222,11 +1232,13 @@ li {
     color: #FFFFFF;
     font-size: 22px;
     font-weight: 800;
+    margin-bottom: 0px;
   }
   
   /* List styles */
   .moscow-card ul {
-    padding:20px;
+    padding-left:20px;
+    padding-right:20px;
     list-style-type: decimal;
   }
   
@@ -1236,7 +1248,7 @@ li {
     font-weight: 400;
     position: relative;
   }
-  
+
 #infoarch{
     margin:50px;
     font-family: 'Nunito Sans', sans-serif;
