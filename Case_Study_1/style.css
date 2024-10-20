@@ -42,7 +42,7 @@ nav {
 
 .logo-container img {
     height: 50px;
-    padding-left: 100px;
+    padding-left: 100%;
 }
 
 .nav-links {
@@ -73,22 +73,24 @@ nav {
     display: flex;
     margin-top: 150px; /* Leave space for sticky header */
 }
-section {
+
+/* section {
     margin-bottom: 100px; /* Space between sections */
-}
+    /* padding-left:8%; 
+} */
 
 .back-button {
-    margin-left: 40px; /* Adjust margin for better alignment */
-    margin-bottom: 20px;
-    margin-top: -9px; /* Reduced negative margin to avoid overlap */
+    margin-left: 14%; /* Adjust margin for better alignment */
     padding: 8px 12px; /* Add padding for more click area */
+    margin-top: -4%;
     display: flex;
     align-items: center;
-    gap: 12px; /* Slightly reduce gap for better balance */
+    gap: 14px; /* Slightly reduce gap for better balance */
     color: #fff;
     background-color: transparent;
     cursor: pointer;
     transition: all 0.3s ease; /* Smooth hover effect */
+    width:fit-content;
 }
   
   /* Style the arrow only with a border */
@@ -109,7 +111,7 @@ section {
 
 .back-button .button-text {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     margin-top: 4px;
     color: #9C9C9C;
@@ -123,10 +125,10 @@ section {
     position: -webkit-sticky;
     position: sticky;
     top: 150px;
-    width: 250px;
+    width: 200px;
     background-color: #202020;
     padding: 20px;
-    max-height: 650px;
+    height: 650px;
     border-radius: 20px;
     backdrop-filter: blur(800px);
     border: 1px solid #5C50B4
@@ -159,7 +161,7 @@ section {
 
 .link-text {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     color: #888;
     transition: color 0.3s ease;
@@ -186,6 +188,8 @@ color: #49D3FF;
 
 #overview {
     margin-left: 50px;
+    margin: 0 14%;
+    margin-bottom: 100px;
 }
 
 .overview-image {
@@ -200,26 +204,26 @@ color: #49D3FF;
     border-radius: 20px;
     color: #fff;
     box-shadow: 2px 2px 20px 1px #FFFFFF1A;
-    max-width:1200px;
+    width:1200px;
 }
 
 /* Problem Statement */
 .problem-statement {
     margin-bottom: 30px;
     padding: 20px;
-    max-width: 1200px;
+    width: 1200px;
   }
   
 .problem-title {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 900;
     color: #7b4bda;
     margin-bottom: 10px;
 }
 
 .problem-description {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 14px;
@@ -228,7 +232,7 @@ color: #49D3FF;
 .problem-detail {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     color: #C5C5C5;
 }
 
@@ -236,7 +240,7 @@ color: #49D3FF;
     display: flex;
     justify-content: space-between;
     margin-top: 61px;
-    max-width:1200px;
+    width:1200px;
 }
 
 .project-details div {
@@ -259,7 +263,7 @@ h4 {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 900;
     color: #5E4FBA;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 15px;
 }
 
@@ -272,7 +276,7 @@ h4 {
 li {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     color: #E0E0E0;
     margin-bottom: 10px;
 }
@@ -283,8 +287,8 @@ li {
   
   /* Image icons for tools */
   .details img {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     margin-right: 8px;
   }
 
@@ -300,7 +304,7 @@ li {
 }
 .solution-sneak-peak {
     font-family: 'Nunito Sans', sans-serif;
-    max-width: 1200px;
+    width: 1200px;
     padding: 80px; /* Optional: Adjust padding as needed */
     color: #fff;
     background-color: #171717;
@@ -310,7 +314,7 @@ li {
 }
 .solution-sneak-peak h2{
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 900;
     color: #7b4bda;
     margin: 0 0 60px -40px;
@@ -327,9 +331,6 @@ li {
     align-items: center;
     max-width: 1200px; /* Adjust as per your requirement */
 }
-.solution-image {
-    flex: 0 0 35%; /* Image will take 35% of the space */
-}
 
 .solution-image img {
     max-width: 100%;
@@ -341,7 +342,7 @@ li {
     flex-direction: column; /* Stack items vertically */
     justify-content: center; /* Vertically center the content */
     align-items: flex-start; /* Horizontally center the content */
-    padding: 10px;
+    padding: 6%;
 }
 
 .heading-wrapper {
@@ -351,31 +352,33 @@ li {
 }
 .number {
     flex-shrink: 0; /* Prevent the number from shrinking */
-    margin-right: 10px; /* Space between number and text */
 }
 
 .number span {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 96px;
+    font-size: 80px;
     font-weight: 700;
     color: #FFFFFF;
     margin-right: 30px;
 }
 
+.solution-image {
+    flex: 0 0 20%; /* Image will take 35% of the space */
+}
+
 .text h3 {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 700;
     color: #FFFFFF;
     margin-bottom: 10px;
 }
 .solution-item .right-side{
     justify-content: flex-end;
-    padding: 0 0 0 160px;
 }
 .solution-text p {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 32px;
     color: #919191;
@@ -389,8 +392,8 @@ li {
 }
 
 #designprocess{
-    margin:50px;
-    margin-top: 290px;
+    margin: 0 14%;
+    margin-bottom: 100px;
 }
 .design-image{
     max-width: 1200px; /* Fixed width */
@@ -398,29 +401,27 @@ li {
 }
 
 #deskresearch{
-    margin:50px;
-}
-
-.desk-research {
     font-family: 'Nunito Sans', sans-serif;
-    max-width: 1200px;
+    max-width: 1660px;
     padding: 80px;
     color: #fff;
     background-color: #171717;
     box-shadow: 2px 2px 20px 1px #FFFFFF1A;
     border-radius: 20px;
-    margin: 0 auto;
+    margin: 0 14%;
+    margin-bottom: 100px;
 }
 
-.desk-research h2 {
+#deskresearch h2 {
     font-size: 30px;
-    font-weight: 900;
-    color: #7b4bda;
     margin: 0 0 60px -40px;
+    font-weight: 900;
+    line-height: 40.92px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #7b4bda;
 }
-
-.desk-research .desk-text {
-    font-size: 24px;
+#deskresearch .desk-text {
+    font-size: 20px;
     font-weight: 400;
     line-height: 32.74px;
     color: #C5C5C5;
@@ -459,7 +460,7 @@ li {
 }
 
 .research-content p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     color: #C5C5C5;
 }
@@ -527,7 +528,7 @@ li {
 }
 
 .insight-item p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     color: #919191;
 }
@@ -538,7 +539,7 @@ li {
 }
 .source{
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     color: #C5C5C5;
     border: 0.3px solid #3C3C3C;
@@ -550,7 +551,7 @@ li {
 }
 .source-container strong {
     font-family: Nunito Sans;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 42px;
     font-weight: 700; /* Bold font for the "Source" */
@@ -562,7 +563,7 @@ li {
 }
 /* General styling for the section */
 #user-analysis {
-    margin:50px;
+    margin-left:50px;
     font-family: 'Nunito Sans', sans-serif;
     color: #C5C5C5;
     background-color: #171717;
@@ -570,6 +571,8 @@ li {
     border-radius: 20px;
     box-shadow: 2px 2px 20px 1px #FFFFFF1A;
     max-width: 1200px;
+    margin: 0 14%;
+    margin-bottom: 100px;
 }
 
 #user-analysis h2 {
@@ -584,7 +587,7 @@ li {
 
 .user-analysis-section p{
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 32.74px;
     color: #C5C5C5;
@@ -617,7 +620,7 @@ li {
 /* Text styling */
 .number-text p {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 32.74px;
     color: #919191;
@@ -645,6 +648,8 @@ li {
     border-radius: 20px;
     box-shadow: 2px 2px 20px 1px #FFFFFF1A;
     max-width: 1200px;
+    margin: 0 14%;
+    margin-bottom: 100px;
 }
 
 #stakeholders h2 {
@@ -658,7 +663,7 @@ li {
 
 .stakeholder-section p {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 32.74px;
     color: #C5C5C5;
@@ -685,7 +690,7 @@ li {
 }
 .stakeholder-container p{
     margin-top: 50px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     color: #919191;
 }
@@ -703,6 +708,8 @@ li {
     border-radius: 20px;
     box-shadow: 2px 2px 20px 1px #FFFFFF1A;
     max-width: 1200px;
+    margin: 0 14%;
+    margin-bottom: 100px;
 }
 
 #primary-research h2 {
@@ -736,7 +743,7 @@ li {
     margin-right: 120px;
 }
 .left,.right strong{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 800;
     line-height: 32.74px;
     color: #FFFFFF;
@@ -749,7 +756,7 @@ li {
     margin-bottom: 100px;
 }
 .left,.right p{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;    
 }
 .right{
@@ -846,7 +853,7 @@ li {
 }
 
 .objective-card-1 ul li {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32.74px;
     margin-bottom: 10px;
     color: #919191;
@@ -856,7 +863,7 @@ li {
     color: #ffffff; /* Use purple for emphasis */
 }
 .objective-card-2 ul li {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32.74px;
     margin-bottom: 10px;
     color: #919191;
@@ -866,7 +873,7 @@ li {
     color: #ffffff; /* Use purple for emphasis */
 }
 .objective-card-3 ul li {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32.74px;
     margin-bottom: 10px;
     color: #919191;
@@ -899,7 +906,7 @@ li {
     font-weight: 400;
     line-height: 34.74px;
     margin-top: 10px;
-    font-size: 24px;
+    font-size: 20px;
     color: #919191;
 }
 
@@ -938,7 +945,7 @@ li {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 24px;
+    font-size: 20px;
     color: #ffffff;
     font-weight: 600;
     line-height: 32.74px;
@@ -962,7 +969,7 @@ li {
 
 .insights-container h2 {
     color: #726ed3;
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 30px;
     text-align: left;
 }
@@ -1002,7 +1009,7 @@ li {
 }
 
 .insight p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 32.74px;
     color:#919191;    
@@ -1024,6 +1031,8 @@ li {
     border-radius: 20px;
     box-shadow: 2px 2px 20px 1px #FFFFFF1A;
     max-width: 1200px;
+    margin: 0 14%;
+    margin-bottom: 100px;
 }
 #how-might-we h2 {
     font-size: 30px;
@@ -1038,7 +1047,7 @@ li {
 }
 .perspective h3{
     color: #919191;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 32.74px;
     margin-bottom: 20px;
@@ -1050,7 +1059,6 @@ li {
     color:#FFFFFF;
 }
 #ideation{
-    margin:50px;
     font-family: 'Nunito Sans', sans-serif;
     color: #C5C5C5;
     background-color: #171717;
@@ -1058,6 +1066,8 @@ li {
     border-radius: 20px;
     box-shadow: 2px 2px 20px 1px #FFFFFF1A;
     max-width: 1200px;
+    margin: 0 14%;
+    margin-bottom: 100px;
 }
 #ideation h2 {
     font-size: 30px;
@@ -1076,7 +1086,7 @@ li {
     margin-bottom: 25px;
 }
 .ideation-intro{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 32.74px;
     color: #C5C5C5;
@@ -1092,12 +1102,12 @@ li {
 }
 .idea-exploration p{
     margin-top: 40px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 32.74px;
 }
 .idea-exploration strong {
-    color: #ffffff; /* Use purple for emphasis */
+    color: #ffffff;
     font-weight: 700;
 }
 /* Container for the entire section */
@@ -1106,9 +1116,8 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 10px;
+    margin-top:40px;
 }
 
 /* Left side (numbered list) */
@@ -1123,13 +1132,13 @@ li {
 
 .numbered-item h5 {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 96px;
+    font-size: 80px;
     font-weight: 700;
     color: #ffffff;
 }
 
 .numbered-item p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 32.74px;
 }
@@ -1168,14 +1177,66 @@ li {
 
 .concept-development p{
     margin-top: 40px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 32.74px;
 }
 .concept-development strong{
-    color: #ffffff; /* Use purple for emphasis */
+    color: #ffffff;
     font-weight: 700;
 }
+
+  .moscow-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for the four cards */
+    gap: 60px;
+    margin-top: 20px;
+  }
+  
+  /* Card styles */
+  .moscow-card {
+    padding: 20px;
+    border-radius: 15px;
+    background: #3C3C3C1A;
+  }
+  
+  /* Specific card color themes */
+  .mo-card {
+    border: 1px solid #85E0A3;
+  }
+  
+  .s-card {
+    border: 1px solid #FFE205 /* Yellow border for S */
+  }
+  
+  .co-card {
+    border: 1px solid #FFA149 /* Orange border for Co */
+  }
+  
+  .w-card {
+    border: 1px solid #D93C64 /* Red border for W */
+  }
+  
+  /* Card headings */
+  .moscow-card h4 {
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 800;
+  }
+  
+  /* List styles */
+  .moscow-card ul {
+    padding:20px;
+    list-style-type: decimal;
+  }
+  
+  .moscow-card ul li {
+    color: #919191;
+    font-size: 22px;
+    font-weight: 400;
+    position: relative;
+  }
+  
 #infoarch{
     margin:50px;
     font-family: 'Nunito Sans', sans-serif;
@@ -1185,6 +1246,8 @@ li {
     border-radius: 20px;
     box-shadow: 2px 2px 20px 1px #FFFFFF1A;
     max-width: 1200px;
+    margin: 0 14%;
+    margin-bottom: 100px;
 }
 #infoarch h2 {
     font-size: 30px;
@@ -1205,14 +1268,12 @@ li {
 #infoarch p{
     color: #C5C5C5;
     margin-top: 40px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 32.74px;
     margin-bottom: 30px;
 }
-#infoarch{
-    margin:50px;
-}
+
 #visualdesign{
     margin:50px;
     font-family: 'Nunito Sans', sans-serif;
@@ -1222,6 +1283,8 @@ li {
     border-radius: 20px;
     box-shadow: 2px 2px 20px 1px #FFFFFF1A;
     max-width: 1200px;
+    margin: 0 14%;
+    margin-bottom: 100px;
 }
 #visualdesign h2 {
     font-size: 30px;
@@ -1242,7 +1305,7 @@ li {
 #visualdesign p{
     color: #C5C5C5;
     margin-top: 40px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 32.74px;
     margin-bottom: 30px;
@@ -1251,7 +1314,8 @@ li {
     margin:50px;
 }
 #learnings{
-    margin:50px;
+    margin: 0 14%;
+    margin-bottom: 100px;
     font-family: 'Nunito Sans', sans-serif;
     color: #C5C5C5;
     background-color: #171717;
@@ -1264,7 +1328,7 @@ li {
 #learnings p{
     color: #C5C5C5;
     margin-top: 40px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 32.74px;
     margin-bottom: 30px;
@@ -1284,5 +1348,10 @@ li {
     margin-left: 20px;
 }
 #finalconcepts{
-    margin:50px;
+    margin: 0 14%;
+    margin-bottom: 100px;
+}
+#usertesting{
+    margin: 0 14%;
+    margin-bottom: 100px;
 }

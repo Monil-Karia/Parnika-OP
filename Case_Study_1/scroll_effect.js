@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     sections.forEach((section) => {
       const sectionTop = section.offsetTop;
-      if (scrollY >= sectionTop - 170) {
+      if (scrollY >= sectionTop - 175) {
         current = section.getAttribute('id');
       }
     });
