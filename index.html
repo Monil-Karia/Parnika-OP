@@ -5,70 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Parnika OP</title>
+    <title>Parnika's Portfolio</title>
     <link rel="stylesheet" href="Home/style.css">
     <script defer src="Home/hamburger.js"></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo-container">
-                <img src="Images/Home_Page/Logo.png" alt="Logo" class="logo" a href="#">
-            </div>
-            <ul class="nav-links">
-                <li><a href="Work/work.html">Work</a></li>
-                <li><a href="#about">About Me</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="hero">
-            <h1>
-                <span class="intro-text">hello, I'm</span>
-                <span class="name">Parnika Sheth</span>
-            </h1>
-            <p class="user-exp">a User Experience Designer from Pune, India!</p>
-            
-            <a href="#" class="resume-button">
-                <div class="button-text">Resume</div>
-                <div class="button-icon">
-                    <div class="icon-box">
-                        <img src="arrow-upper-right.png" alt="Arrow Icon">
+<body>   
+    <div class="loading-screen" id="loadingScreen">
+        <p class="loading-text">hello, I'm</p>
+        <div class="loading-bars">
+            <div class="bar small-bar"></div>
+            <div class="bar large-bar"></div>
+        </div>
+        <div class="circle"></div>
+    </div>
+
+    <div class="main-content" id="mainContent">
+        <header>
+            <nav>
+                <div class="logo-container">
+                    <a href="/index.html"><img src="Images/Home_Page/Logo.png" alt="Logo" class="logo"></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="Work/work.html">Work</a></li>
+                    <li><a href="#about">About Me</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="hero" id="hero">
+                <h1>
+                    <span class="name">Parnika Sheth</span>
+                </h1>
+                <p class="user-exp">a User Experience Designer from Pune, India!</p>
+                
+                <a href="#" class="resume-button">
+                    <div class="button-text">Resume</div>
+                    <div class="button-icon">
+                        <div class="icon-box">
+                            <img src="arrow-upper-right.png" alt="Arrow Icon">
+                        </div>
                     </div>
-                </div>
-            </a>            
-            <div class="changing-text">
-                <span id="static-part">I like to </span><br>
-                <span id="changing-part"><u>design experiences!</u></span>
-            </div>              
-        </div>
-    </main>
-    
-    
-    <footer>
-        <div class="footer-container">
-            <p>&copy; Made with Love &hearts; by Parnika Sheth</p>
-                <div class="icon-container">
-                    <a href="tel:+1234567890" class="icon" title="Call">
-                        <img src="Images/Home_Page/Call_Phone.png" alt="Call Icon">
-                    </a>
-                    <a href="mailto:someone@example.com" class="icon" title="Email">
-                        <img src="Images/Home_Page/Email.png" alt="Email Icon">
-                    </a>
-                    <a href="https://www.linkedin.com/in/yourprofile" class="icon" title="LinkedIn" target="_blank">
-                        <img src="Images/Home_Page/LinkedIN.png" alt="LinkedIn Icon">
-                    </a>
-                    <a href="https://medium.com/@yourprofile" class="icon" title="Medium" target="_blank">
-                        <img src="Images/Home_Page/Medium.png" alt="Medium Icon">
-                    </a>
-                </div>
-        </div>
-    </footer>   
-    
+                </a>            
+                <div class="changing-text">
+                    <span id="static-part">I like to </span><br>
+                    <span id="changing-part"><u>design experiences!</u></span>
+                </div>              
+            </div>
+        </main>
+        
+        <footer>
+            <div class="footer-container">
+                <p>&copy; Made with Love &hearts; by Parnika Sheth</p>
+                    <div class="icon-container">
+                        <a href="tel:+1234567890" class="icon" title="Call">
+                            <img src="Images/Home_Page/Call_Phone.png" alt="Call Icon">
+                        </a>
+                        <a href="mailto:someone@example.com" class="icon" title="Email">
+                            <img src="Images/Home_Page/Email.png" alt="Email Icon">
+                        </a>
+                        <a href="https://www.linkedin.com/in/yourprofile" class="icon" title="LinkedIn" target="_blank">
+                            <img src="Images/Home_Page/LinkedIN.png" alt="LinkedIn Icon">
+                        </a>
+                        <a href="https://medium.com/@yourprofile" class="icon" title="Medium" target="_blank">
+                            <img src="Images/Home_Page/Medium.png" alt="Medium Icon">
+                        </a>
+                    </div>
+            </div>
+        </footer>   
+    </div>
 </body>
 </html>

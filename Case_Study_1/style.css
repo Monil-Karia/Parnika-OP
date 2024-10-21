@@ -120,7 +120,10 @@ nav {
     margin-top: 4px;
     color: #9C9C9C;
 }
-    
+.button-text a{
+    text-decoration: none;
+    color: #9C9C9C;
+}
 .back-button:hover .button-text {
     text-decoration: underline;
 }
@@ -178,7 +181,6 @@ background-color:  #49D3FF;
   
 .sticky-sidebar li a.active .link-text {
 color: #49D3FF; /* Active text color */
-font-weight: bold;
 }
   
   /* Hover Effect */
