@@ -1465,17 +1465,6 @@ li {
     filter: invert(1); /* Inverts color from black to white */
     transition: filter 0.3s ease;
 }
-
-/* Hover effect for the icon and its box */
-.button:hover .end-icon-box {
-    border-color: #000000; /* Box border turns black */
-    background-color: #49D3FF; /* Optional: background change */
-}
-
-.button:hover .icon-box img {
-    filter: invert(0); /* Reverts the color back to black on hover */
-}
-
 .end-card-image {
     display: flex;
     justify-content: center;
@@ -1489,39 +1478,6 @@ li {
 .end-card-image img {
     height: 180px;
     width: 180px;
-}
-
-.end-icon-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 5px;
-    gap:18px;
-}
-
-.end-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 58px;
-    height: 58px;
-    border: 1.5px solid #fff; 
-    border-radius: 50%; 
-    transition: border-color 0.3s ease;
-    position: relative;
-    z-index: 1;
-}
-
-.end-icon img {
-    width: 57px; 
-    height: 57px;
-    border-radius: 50%; 
-    z-index: 1; 
-}
-
-.end-icon:hover {
-    border-color: #49D3FF;
-    
 }
 .end-button {
     font-family: 'Nunito Sans', sans-serif;
@@ -1545,6 +1501,13 @@ li {
     background-color: #49D3FF; /* Change background to white */
     color: #000000; /* Text color to black */
     border-color: #49D3FF; /* Change border to white */
+}
+.end-button:hover .end-icon-box {
+    border-color: #000000; /* Box border turns black */
+    background-color: #49D3FF; /* Optional: background change */
+}
+.end-button:hover .end-icon-box img {
+    filter: invert(0); /* Reverts the color back to black on hover */
 }
 
 #designprocess{
@@ -1612,6 +1575,7 @@ footer {
     box-shadow: 1px 4px 30px 1px #FFFFFF1A;
     margin-top:100px;
 }
+
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -1619,6 +1583,7 @@ footer {
     width: 100%;
     padding:  0 25px; 
 }
+
 .footer-container p {
     font-family: 'Nunito' , sans-serif;
     font-size: 18px;
