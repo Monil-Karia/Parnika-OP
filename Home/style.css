@@ -56,63 +56,45 @@ body {
 .loading-bars {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
+    justify-content: center;
     gap: 20px;
 }
+/* The small-bar will grow into the large-bar width */
+@keyframes growBar {
+    0% {
+        width: 120px;
+    }
+    100% {
+        width: 700px;
+    }
+}
 
-/* Common styles for bars */
-.bar {
-    height: 51px;
-    border-radius: 60px;
+/* Apply the animation to both small-bar and large-bar */
+.small-bar{
+    position: fixed;
+    height: 50px; /* Same height for consistency */
     background: linear-gradient(90deg, #263A40 0%, #43272F 100%);
+    border-radius: 60px; /* Optional for rounded edges */
+    animation: growBar 2.8s ease-in-out forwards;
+    margin-left: -350px;
 }
 
-/* Different widths for bars */
-.small-bar {
-    width: 120px;
-}
-
-.large-bar {
-    width: 700px;
-}
-
-/* The circle element below the bars */
 .circle {
     width: 150px;
     height: 150px;
     margin-top: 40px;
     border-radius: 50%;
     background: linear-gradient(90deg, #263A40 0%, #43272F 100%);
-}
-
-/* Add animations */
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.01);
-    }
-}
-
-/* Apply animation to bars and circle */
-.small-bar, .large-bar, .circle {
     animation: pulse 2s infinite;
 }
 
-/* Custom animation timing for each bar */
-.small-bar {
-    animation-delay: 0.2s;
-}
-
+/* The large-bar will remain static once the small-bar reaches its full width */
 .large-bar {
-    animation-delay: 0.4s;
+    width: 700px; /* Final width */
+    visibility: hidden; /* Hidden, as the growing bar acts as the loading bar */
 }
 
-.circle {
-    animation-delay: 0.6s;
-}
 .main-content {
     display: none;
     transition: opacity 5s ease-in-out; /* Smooth fade-in transition */

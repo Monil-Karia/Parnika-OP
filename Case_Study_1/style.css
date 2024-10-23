@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 body {
@@ -84,7 +85,6 @@ nav {
 .back-button {
     margin-left: 14%; /* Adjust margin for better alignment */
     padding: 8px 12px; /* Add padding for more click area */
-    margin-top: -4%;
     display: flex;
     align-items: center;
     gap: 14px; /* Slightly reduce gap for better balance */
