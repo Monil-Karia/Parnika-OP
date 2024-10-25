@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Nunito", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+    background: 
+        url('../Images/Home_Page/Grid_Home.png') repeat,
+        linear-gradient(to right, rgba(0, 28, 48, 0.7), rgba(52, 12, 24, 0.7)), /* Gradient */
+        url('../Images/Work_Page/work_bg.png') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background-color: #202020;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border-radius: 0 0 3% 3%;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container img {
+    height: 50px;
+    padding-left: 100px;
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-links li {
+    list-style: none;
+  }
+  
+  .nav-links a {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    transition: color 0.3s;
+    padding-right: 60px;
+  }
+  
+  .nav-links a:hover {
+    color: #49d3ff;
+  }
+
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger .bar {
+    height: 4px;
+    width: 25px;
+    background-color: white;
+    margin: 4px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Animation for Hamburger Menu */
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* Responsive Navbar */
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      background-color: #1c1c1c;
+      height: 100vh;
+      width: 200px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+  
+    .nav-links.active {
+      transform: translateX(0);
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px;
+}
+
+/* Text Section */
+.about-text {
+    max-width: 50%;
+}
+
+.name-pronunciation h1 {
+    font-family: 'Nunito Sans' , sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.47px;
+}
+
+.pronouns {
+    font-family: 'Nunito Sans' , sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.74px;
+    color: #fff;
+}
+
+.pronunciation {
+    font-family: 'Nunito Sans' , sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32.74px;
+    color: #fff;
+}
+
+.word-type {
+    font-family: 'Nunito Sans';
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 32.74px;
+    margin-top:100px;
+}
+
+.definitions {
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.74px;  
+    padding-left:30px;
+    margin-top:18px;
+}
+
+/* Image Section */
+.about-image img {
+    width: 500px;
+    height: 500px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.definitions li{
+    margin-bottom: 20%;
+    padding-left: 10px;
+}
+
+.resume-button {
+    font-family: "Nunito Sans", sans-serif;
+    display: inline-flex;
+    max-height: 67px;
+    max-width: 198px;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #202020;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.1s, color 0.1s, border-color 0.1s ease;
+  }
+  
+  /* Button Text */
+  .resume-button .button-text {
+    font-family: "Nunito Sans", sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    margin-right: 18px;
+    font-weight: 400;
+  }
+  
+  .resume-button .icon-box {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.1s, border-color 0.1s ease;
+  }
+  
+  /* Button Icon (Arrow Image) */
+  .resume-button .icon-box img {
+    width: 14px;
+    height: 14px;
+    filter: invert(1);
+    transition: filter 0.1s ease;
+  }
+  
+  /* Hover Effect for Button */
+  .resume-button:hover {
+    background-color: #49d3ff; /* Change background to white */
+    color: #000000; /* Text color to black */
+    border-color: #49d3ff; /* Change border to white */
+  }
+  
+  /* Hover Effect for Text */
+  .resume-button:hover .button-text {
+    color: #000000; /* Text turns black on hover */
+  }
+  
+  /* Hover Effect for Box and Arrow */
+  .resume-button:hover .icon-box {
+    border-color: #000000; /* Box border turns black */
+    background-color: #49d3ff; /* Optional: background change */
+  }
+  
+  .resume-button:hover .icon-box img {
+    filter: invert(0); /* Arrow turns black on hover */
+  }
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about-image img {
+        width: 250px;
+    }
+}
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #222; /* Optional: for contrast */
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    animation: scroll 20s linear infinite;
+}
+
+.carousel img {
+    width: 150px; /* Adjust as per your design */
+    height: auto;
+    margin-right: 15px;
+    border-radius: 10px; /* Optional for styling */
+}
+
+/* Keyframes for the continuous scroll effect */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* Infinite sliding animation */
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
