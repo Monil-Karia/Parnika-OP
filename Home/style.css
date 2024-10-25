@@ -1,450 +1,448 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Borel&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body, html {
-    font-family: 'Nunito', sans-serif;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-y: auto;
+body,
+html {
+  font-family: "Nunito", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
 }
 body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .loading-screen {
-    background: #202020;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999; /* Make sure it's above other content */
-    opacity: 1;
-    transition: opacity 8s ease-in-out; /* Transition effect */
+  background: #202020;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Make sure it's above other content */
+  opacity: 1;
+  transition: opacity 8s ease-in-out; /* Transition effect */
 }
 .loading-screen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Styling for the loading text */
 .loading-text {
-    font-family: Borel;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 96px;
-    color: #fff;
-    margin-bottom: 20px;
-    animation: fadeInUp 1s ease-in-out forwards;  
+  font-family: Borel;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 96px;
+  color: #fff;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease-in-out forwards;
 }
 
 /* Bar container */
 .loading-bars {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
 }
 /* The small-bar will grow into the large-bar width */
 @keyframes growBar {
-    0% {
-        width: 120px;
-    }
-    100% {
-        width: 700px;
-    }
+  0% {
+    width: 120px;
+  }
+  100% {
+    width: 700px;
+  }
 }
 
 /* Apply the animation to both small-bar and large-bar */
-.small-bar{
-    position: fixed;
-    height: 50px; /* Same height for consistency */
-    background: linear-gradient(90deg, #263A40 0%, #43272F 100%);
-    border-radius: 60px; /* Optional for rounded edges */
-    animation: growBar 2.8s ease-in-out forwards;
-    margin-left: -350px;
+.small-bar {
+  position: fixed;
+  height: 50px; /* Same height for consistency */
+  background: linear-gradient(90deg, #263a40 0%, #43272f 100%);
+  border-radius: 60px; /* Optional for rounded edges */
+  animation: growBar 2.8s ease-in-out forwards;
+  margin-left: -350px;
 }
 
 .circle {
-    width: 150px;
-    height: 150px;
-    margin-top: 40px;
-    border-radius: 50%;
-    background: linear-gradient(90deg, #263A40 0%, #43272F 100%);
-    animation: pulse 2s infinite;
+  width: 150px;
+  height: 150px;
+  margin-top: 40px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #263a40 0%, #43272f 100%);
+  animation: pulse 2s infinite;
 }
 
 /* The large-bar will remain static once the small-bar reaches its full width */
 .large-bar {
-    width: 700px; /* Final width */
-    visibility: hidden; /* Hidden, as the growing bar acts as the loading bar */
+  width: 700px; /* Final width */
+  visibility: hidden; /* Hidden, as the growing bar acts as the loading bar */
 }
 
 .main-content {
-    display: none;
-    transition: opacity 5s ease-in-out; /* Smooth fade-in transition */
+  display: none;
+  transition: opacity 5s ease-in-out; /* Smooth fade-in transition */
 }
 /* Navbar Styles */
 header {
-    background-color: #202020;
-    padding: 15px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    border-radius: 0 0 3% 3%;
+  background-color: #202020;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  border-radius: 0 0 3% 3%;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo-container img {
-    height: 50px;
-    padding-left: 100px;
+  height: 50px;
+  padding-left: 100px;
 }
 
 .nav-links {
-    display: flex;
+  display: flex;
 }
 
 .nav-links li {
-    list-style: none;
+  list-style: none;
 }
 
 .nav-links a {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    color: white;
-    text-decoration: none;
-    font-size:1.5rem;
-    padding: 10px;
-    transition: color 0.3s;
-    padding-right: 60px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 10px;
+  transition: color 0.3s;
+  padding-right: 60px;
 }
 
 .nav-links a:hover {
-    color: #49D3FF;
+  color: #49d3ff;
 }
 
 /* Hamburger menu styles */
 .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .hamburger .bar {
-    height: 4px;
-    width: 25px;
-    background-color: white;
-    margin: 4px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+  height: 4px;
+  width: 25px;
+  background-color: white;
+  margin: 4px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 /* Animation for Hamburger Menu */
 .hamburger.active .bar:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .hamburger.active .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* Responsive Navbar */
 @media screen and (max-width: 768px) {
-    .nav-links {
-        position: absolute;
-        top: 80px;
-        right: 0;
-        background-color: #1c1c1c;
-        height: 100vh;
-        width: 200px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-    }
-
-    .nav-links.active {
-        transform: translateX(0);
-    }
-
-    .hamburger {
-        display: flex;
-    }
-}
-.hero {
-    display: flex;
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #1c1c1c;
+    height: 100vh;
+    width: 200px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    gap: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
 
-    /* Layering the backgrounds */
-    background: 
-        url('../Images/Home_Page/Grid_Home.png') repeat, /* Static Grid image */
-        linear-gradient(to right, rgba(0, 28, 48, 0.7), rgba(52, 12, 24, 0.7)), /* Gradient */
-        url('../Images/Home_Page/BG WEBSITE.gif') no-repeat center center/cover; /* GIF background */
-    background-attachment: fixed, scroll, scroll;
-    animation: bg-animation 1s linear infinite;
+  .nav-links.active {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  /* Layering the backgrounds */
+  background: url("../Images/Home_Page/Grid_Home.png") repeat,
+    /* Static Grid image */
+      linear-gradient(to right, rgba(0, 28, 48, 0.7), rgba(52, 12, 24, 0.7)),
+    /* Gradient */ url("../Images/Home_Page/BG WEBSITE.gif") no-repeat center
+      center/cover; /* GIF background */
+  background-attachment: fixed, scroll, scroll;
+  animation: bg-animation 3s linear infinite;
 }
 
 @keyframes bg-animation {
-    0% {
-        background-position: 0 0, 0 0, 0 0; /* Static grid, moving GIF */
-    }
-    100% {
-        background-position: 0 0, 100% 100%, 100% 100%;
-    }
+  0% {
+    background-position: 0 0, 0 0, 0 0; /* Static grid, moving GIF */
+  }
+  100% {
+    background-position: 0 0, 100% 100%, 100% 100%;
+  }
 }
 
-
 h1 {
-    font-size: 3.5em;
+  font-size: 3.5em;
 }
 
 h1 span {
-    color: #49D3FF;
+  color: #49d3ff;
 }
 .tagline {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .tagline .highlight {
-    color: #FA4772;
+  color: #fa4772;
 }
 
 .user-exp {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    font-size: 2.188em;
-    color: #49D3FF;
-    margin-top: -1.8%;
-    margin-bottom: 74px;
-    opacity: 0; 
-    transform: translateY(30px);  /* Start slightly below */
-    animation: fadeInUp 2s ease-in-out forwards;  
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 2.188em;
+  color: #49d3ff;
+  margin-top: -1.8%;
+  margin-bottom: 74px;
+  opacity: 0;
+  transform: translateY(30px); /* Start slightly below */
+  animation: fadeInUp 2s ease-in-out forwards;
 }
 /* Style for name */
 .hero h1 span.name {
-    display: block;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 8rem;
-    font-weight: 700;
-    line-height:174.59px;
-    color: #fff;
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 2s ease-in-out forwards;  
+  display: block;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 174.59px;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 2s ease-in-out forwards;
 }
 
 .resume-button {
-    font-family: 'Nunito Sans', sans-serif;
-    display: inline-flex;
-    max-height: 67px;
-    max-width: 198px;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: #202020;
-    border: 1px solid #ffffff;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: background-color 0.1s, color 0.1s, border-color 0.1s ease;
+  font-family: "Nunito Sans", sans-serif;
+  display: inline-flex;
+  max-height: 67px;
+  max-width: 198px;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #202020;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.1s, color 0.1s, border-color 0.1s ease;
 }
 
 /* Button Text */
 .resume-button .button-text {
-    font-family: 'Nunito Sans', sans-serif;
-    color: #ffffff;
-    font-size: 24px;
-    margin-right: 18px;
-    font-weight: 400;
+  font-family: "Nunito Sans", sans-serif;
+  color: #ffffff;
+  font-size: 24px;
+  margin-right: 18px;
+  font-weight: 400;
 }
 
 .resume-button .icon-box {
-    width: 30px;  
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    transition: background-color 0.1s, border-color 0.1s ease;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  transition: background-color 0.1s, border-color 0.1s ease;
 }
 
 /* Button Icon (Arrow Image) */
 .resume-button .icon-box img {
-    width: 14px;
-    height: 14px;
-    filter: invert(1);
-    transition: filter 0.1s ease;
+  width: 14px;
+  height: 14px;
+  filter: invert(1);
+  transition: filter 0.1s ease;
 }
 
 /* Hover Effect for Button */
 .resume-button:hover {
-    background-color: #49D3FF; /* Change background to white */
-    color: #000000; /* Text color to black */
-    border-color: #49D3FF; /* Change border to white */
+  background-color: #49d3ff; /* Change background to white */
+  color: #000000; /* Text color to black */
+  border-color: #49d3ff; /* Change border to white */
 }
 
 /* Hover Effect for Text */
 .resume-button:hover .button-text {
-    color: #000000; /* Text turns black on hover */
+  color: #000000; /* Text turns black on hover */
 }
 
 /* Hover Effect for Box and Arrow */
 .resume-button:hover .icon-box {
-    border-color: #000000; /* Box border turns black */
-    background-color: #49D3FF; /* Optional: background change */
+  border-color: #000000; /* Box border turns black */
+  background-color: #49d3ff; /* Optional: background change */
 }
 
 .resume-button:hover .icon-box img {
-    filter: invert(0); /* Arrow turns black on hover */
+  filter: invert(0); /* Arrow turns black on hover */
 }
 .changing-text {
-    text-align: center;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 400;
-    font-size: 2.5em;
-    color: white;
-    margin-top: 140px;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2.5em;
+  color: white;
+  margin-top: 140px;
 }
-#static-part{
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 40px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 54.56px;
-    text-align: center;
-    color: #9C9C9C;
+#static-part {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 54.56px;
+  text-align: center;
+  color: #9c9c9c;
 }
 #changing-part {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 40px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 54.56px;
-    text-decoration: underline;
-    text-decoration-thickness: 2px; 
-    text-underline-offset: 3px;
-    display: block;
-    color: #FA4772;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 54.56px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  display: block;
+  color: #fa4772;
 }
 /* Fade In Up Animation */
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .fade-up-out {
-    animation: fadeOutUp 1s ease-in-out forwards;
+  animation: fadeOutUp 1s ease-in-out forwards;
 }
 
 .fade-up-in {
-    animation: fadeInUp 1s ease-in-out forwards;
+  animation: fadeInUp 1s ease-in-out forwards;
 }
 @keyframes fadeOutUp {
-    from {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    to {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
 }
 
-
 footer {
-    background-color: #202020;
-    color: white;
-    height: 120px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    bottom: 0;
-    padding-right: 60px;
-    padding-left: 100px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  background-color: #202020;
+  color: white;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  padding-right: 60px;
+  padding-left: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding:  0 25px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 25px;
 }
 .footer-container p {
-    font-family: 'Nunito' , sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21.82px;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.82px;
 }
 
 .icon-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 5px;
-    gap:18px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  gap: 18px;
 }
 
 .icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 58px;
-    height: 58px;
-    border: 1.5px solid #fff; 
-    border-radius: 50%; 
-    transition: border-color 0.3s ease;
-    position: relative;
-    z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+  transition: border-color 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .icon img {
-    width: 57px; 
-    height: 57px;
-    border-radius: 50%; 
-    z-index: 1; 
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+  z-index: 1;
 }
 
 .icon:hover {
-    border-color: #49D3FF;
+  border-color: #49d3ff;
 }
-
-
