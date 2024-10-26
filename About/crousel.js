@@ -1,24 +1,16 @@
-const carousel = document.querySelector('.carousel');
-let clones, scrollWidth;
+const crousel = document.querySelectorAll(".infinite-crousel");
 
-const initCarousel = () => {
-    clones = [...carousel.children].map(img => img.cloneNode(true));
-    clones.forEach(clone => carousel.appendChild(clone));
-    scrollWidth = carousel.scrollWidth / 2;
-};
+crousel.forEach(crousel => {
+  const crouselInner = crousel.querySelector(".infinite-crousel > div");
 
-let scrollLeft = 0;
+  const crouselCount = Array.from(crouselInner.children);
 
-const continuousScroll = () => {
-    scrollLeft += 1;
-    if (scrollLeft >= scrollWidth) {
-        scrollLeft = 0;
-    }
-    carousel.style.transform = `translateX(${-scrollLeft}px)`;
-    requestAnimationFrame(continuousScroll);
-};
+  crouselCount.forEach(item => {
+    const duplicateItem = item.cloneNode(true);
 
-window.addEventListener('load', () => {
-    initCarousel();
-    continuousScroll();
+    crouselInner.appendChild(duplicateItem);
+
+    crouselInner.style.animation = "move 30s linear infinite";
+
+  });
 });
