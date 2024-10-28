@@ -406,7 +406,7 @@ li strong {
 
 #deskresearch {
   font-family: "Nunito Sans", sans-serif;
-  width: 1354px;
+  width: 1200px;
   padding: 80px;
   color: #fff;
   background-color: #171717;
@@ -466,27 +466,27 @@ li strong {
   );
   color: transparent;
   background-clip: text;
-  font-size: 35px;
+  font-size: 32px;
   font-weight: bold;
 }
 #deskresearch .inner-container-3w .content-1 .content-class .normal-content {
   font-family: "Nunito Sans", sans-serif;
   color: white;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 400;
 }
 
 #deskresearch .inner-container-3w .content-2 {
   font-family: "Nunito Sans", sans-serif;
   color: #919191;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
   width: 562px;
   height: 66px;
 }
 #deskresearch .inner-container-3w .content-3 .inner-content-3 {
-  width: 167px;
-  height: 159px;
+  width: 160px;
+  height: 152px;
   padding: 40px;
   display: flex;
   justify-content: center;
@@ -495,7 +495,70 @@ li strong {
   border-radius: 20px;
 }
 
-/* Desk Research Code */
+/* Desk Research Code Ends */
+
+/* Literature Review Code starts */
+#literature-review h3 {
+  color: #ffab46;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+#literature-review .all-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 54px;
+}
+
+#literature-review .review-card {
+  font-family: "Nunito Sans", sans-serif;
+  position: relative;
+  width: 310px;
+  height: 310px;
+  padding-top: 28px;
+  box-sizing: border-box;
+  border: 1px solid #ffab46;
+}
+
+#literature-review .review-card .review-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#literature-review .review-card .review-card-container .content-1 {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 175px;
+  word-break: break-word;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 300;
+  color: #919191;
+}
+
+#literature-review .review-card .review-card-container .content-2 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 300;
+  color: #919191;
+}
+
+#literature-review .corner-border {
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 78px;
+  height: 78px;
+  margin-top: 20px;
+  border-top: 1px solid #ffab46;
+  border-left: 1px solid #ffab46;
+  background: linear-gradient(135deg, rgba(255, 171, 70, 0.5) 50%, #171717 50%);
+}
+
+/* Literature Review Code ends */
 
 .divider {
   margin: 40px 0;
@@ -583,7 +646,7 @@ li strong {
 
 #problem-statement {
   font-family: "Nunito Sans", sans-serif;
-  max-width: 1660px;
+  width: 1200px;
   padding: 80px;
   color: #fff;
   background-color: #171717;
@@ -612,7 +675,7 @@ li strong {
   padding: 80px;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 1px #ffffff1a;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 14%;
   margin-bottom: 100px;
 }
@@ -637,7 +700,7 @@ li strong {
 /* Container for each analysis item */
 .analysis-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   margin-bottom: 150px;
 }
@@ -688,7 +751,7 @@ li strong {
   padding: 80px;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 1px #ffffff1a;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 14%;
   margin-bottom: 100px;
 }

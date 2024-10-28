@@ -892,17 +892,15 @@ li strong {
 .findings-of-research .cards-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 50px;
 }
 
 .findings-of-research .cards-container .card {
   position: relative;
-  width: 30%;
-  height: 342px;
-  min-height: max-content;
-
-  margin-bottom: 40px;
-  padding: 34px 16px 14px;
+  width: 300px;
+  height: 330px;
+  padding: 30px 16px 0px 16px;
+  margin-bottom: 44px;
   text-align: center;
   box-sizing: border-box;
 }
@@ -920,7 +918,7 @@ li strong {
 }
 .findings-of-research .cards-container .card .corner-border {
   position: absolute;
-  bottom: 1;
+  bottom: -1px;
   right: -1px;
   width: 78px;
   height: 78px;
@@ -929,7 +927,11 @@ li strong {
 .findings-of-research .cards-container .card.card-1 .corner-border {
   border-top: 1px solid #a193f2;
   border-left: 1px solid #a193f2;
-  background: linear-gradient(135deg, rgba(161, 147, 242, 0.5), #171717 50%);
+  background: linear-gradient(
+    135deg,
+    rgba(161, 147, 242, 0.5) 50%,
+    #171717 50%
+  );
 }
 .findings-of-research .cards-container .card.card-2 .corner-border {
   border-top: 1px solid #4dd0e1;
@@ -945,20 +947,13 @@ li strong {
 .findings-of-research p {
   height: 140px;
   color: #919191;
-  font-size: 22px;
+  font-size: 20px;
 }
 .findings-of-research blockquote {
   font-size: 18px;
   font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-.findings-of-research .bottom-info-style {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  margin-bottom: 14px;
+  margin-bottom: 4px;
+  height: 80px;
 }
 
 .show-more-button {
@@ -974,7 +969,7 @@ li strong {
   color: white;
   border-radius: 10px;
 }
-/* .hide-button {
+.hide-button {
   display: none;
   align-items: center;
   gap: 10px;
@@ -986,11 +981,17 @@ li strong {
   border: 2px solid white;
   color: white;
   border-radius: 10px;
-} */
+}
 .show-more-button svg {
   width: 40px;
   height: 40px;
   stroke: white; /* Explicitly sets the color */
+}
+.hide-button svg {
+  width: 40px;
+  height: 40px;
+  stroke: white; /* Explicitly sets the color */
+  rotate: -180deg;
 }
 .findings-of-research .cards-container .card:nth-child(-n + 6) {
   display: block; /* Show only the first 6 cards initially */
@@ -1015,6 +1016,9 @@ li strong {
 .step {
   width: 20%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .step p {

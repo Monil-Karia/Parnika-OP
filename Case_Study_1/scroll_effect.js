@@ -24,31 +24,30 @@ document.addEventListener("DOMContentLoaded", () => {
 //Show more button functionality
 const showMoreButton = document.querySelector(".show-more-button");
 const cards = document.querySelectorAll(".cards-container .card");
-// const hideButton = document.querySelector(".hide-button");
+const hideButton = document.querySelector(".hide-button");
 let visibleCards = 6;
 
 showMoreButton.addEventListener("click", () => {
-  for (let i = visibleCards; i < visibleCards + 3 && i < cards.length; i++) {
+  for (let i = visibleCards; i < visibleCards + 5 && i < cards.length; i++) {
     cards[i].style.display = "block";
   }
-  visibleCards += 3;
+  visibleCards += 5;
 
   // Hide button if all cards are visible
   if (visibleCards >= cards.length) {
+    console.log(visibleCards);
     showMoreButton.style.display = "none";
-    // hideButton.style.display = "flex";
+    hideButton.style.display = "flex";
   }
 });
 
-// hideButton.addEventListener("click", () => {
-//   for (let i = visibleCards; i >= visibleCards - 5 && i < cards.length; i++) {
-//     cards[i].style.display = "none";
-//   }
-//   visibleCards -= 5;
+hideButton.addEventListener("click", () => {
+  for (let i = 6; i < cards.length; i++) {
+    cards[i].style.display = "none"; // Hide all cards except the first 6
+  }
+  visibleCards = 6;
 
-//   // Hide button if all cards are visible
-//   if (visibleCards <= 6) {
-//     showMoreButton.style.display = "block";
-//     hideButton.style.display = "none";
-//   }
-// });
+  // Show "Show More" button and hide "Hide" button
+  showMoreButton.style.display = "flex";
+  hideButton.style.display = "none";
+});
