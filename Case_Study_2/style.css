@@ -223,7 +223,7 @@ nav {
   font-family: "Nunito Sans", sans-serif;
   font-size: 25px;
   font-weight: 900;
-  color: #5c50b4;
+  color: #ffab46;
   margin-bottom: 10px;
 }
 
@@ -267,7 +267,7 @@ nav {
 h4 {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 900;
-  color: #5e4fba;
+  color: #ffab46;
   font-size: 25px;
   margin-bottom: 15px;
 }
@@ -320,7 +320,7 @@ li strong {
   font-family: "Nunito Sans", sans-serif;
   font-size: 30px;
   font-weight: 900;
-  color: #5c50b4;
+  color: #ffab46;
   margin: 0 0 60px -40px;
 }
 
@@ -406,7 +406,7 @@ li strong {
 
 #deskresearch {
   font-family: "Nunito Sans", sans-serif;
-  max-width: 1660px;
+  width: 1200px;
   padding: 80px;
   color: #fff;
   background-color: #171717;
@@ -422,7 +422,7 @@ li strong {
   font-weight: 900;
   line-height: 40.92px;
   font-family: "Nunito Sans", sans-serif;
-  color: #5c50b4;
+  color: #ffab46;
 }
 #deskresearch .desk-text {
   font-size: 20px;
@@ -430,60 +430,135 @@ li strong {
   line-height: 32.74px;
   color: #c5c5c5;
   margin-bottom: 80px;
-}
-
-.research-overview {
-  margin-top: 20px;
-}
-
-.research-row {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 100px;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.research-item {
+/* Desk Research Code */
+#deskresearch .container-3w {
   display: flex;
+  flex-direction: column;
+  gap: 131px;
+}
+
+#deskresearch .inner-container-3w {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
   justify-content: space-between;
-  width: 48%;
   align-items: center;
-  background-color: #171717;
-  padding: 20px;
-  border-radius: 15px;
 }
 
-.research-content {
-  max-width: 60%;
+#deskresearch .inner-container-3w .content-1 .content-class {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 304px;
 }
 
-.research-content h3 {
-  font-size: 35px;
-  font-weight: 700;
-  line-height: 42px;
-  margin-bottom: 20px;
+#deskresearch .inner-container-3w .content-1 .content-class span {
+  font-family: "Nunito Sans", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 171, 70, 1),
+    rgba(253, 70, 139, 1) 30%
+  );
+  color: transparent;
+  background-clip: text;
+  font-size: 32px;
+  font-weight: bold;
 }
-
-.research-content p {
-  font-size: 20px;
+#deskresearch .inner-container-3w .content-1 .content-class .normal-content {
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+  font-size: 28px;
   font-weight: 400;
-  color: #c5c5c5;
-}
-.research-image {
-  padding: 40px;
-  border-radius: 20px;
-  border: 0.1px solid #a193f2;
-}
-.research-image img {
-  width: 70px;
-  height: 70px;
 }
 
-.overview-icon {
-  display: block;
-  width: 100px;
-  max-height: 100px;
-  object-fit: contain;
+#deskresearch .inner-container-3w .content-2 {
+  font-family: "Nunito Sans", sans-serif;
+  color: #919191;
+  font-size: 20px;
+  font-weight: 300;
+  width: 562px;
+  height: 66px;
 }
+#deskresearch .inner-container-3w .content-3 .inner-content-3 {
+  width: 160px;
+  height: 152px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px #ffdfb8 solid;
+  border-radius: 20px;
+}
+
+/* Desk Research Code Ends */
+
+/* Literature Review Code starts */
+#literature-review h3 {
+  color: #ffab46;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+#literature-review .all-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 54px;
+}
+
+#literature-review .review-card {
+  font-family: "Nunito Sans", sans-serif;
+  position: relative;
+  width: 310px;
+  height: 310px;
+  padding-top: 28px;
+  box-sizing: border-box;
+  border: 1px solid #ffab46;
+}
+
+#literature-review .review-card .review-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#literature-review .review-card .review-card-container .content-1 {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 175px;
+  word-break: break-word;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 300;
+  color: #919191;
+}
+
+#literature-review .review-card .review-card-container .content-2 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 300;
+  color: #919191;
+}
+
+#literature-review .corner-border {
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 78px;
+  height: 78px;
+  margin-top: 20px;
+  border-top: 1px solid #ffab46;
+  border-left: 1px solid #ffab46;
+  background: linear-gradient(135deg, rgba(255, 171, 70, 0.5) 50%, #171717 50%);
+}
+
+/* Literature Review Code ends */
 
 .divider {
   margin: 40px 0;
@@ -566,6 +641,32 @@ li strong {
 .bold {
   color: white;
 }
+
+/* Problem Statment Section Starts */
+
+#problem-statement {
+  font-family: "Nunito Sans", sans-serif;
+  width: 1200px;
+  padding: 80px;
+  color: #fff;
+  background-color: #171717;
+  box-shadow: 2px 2px 20px 1px #ffffff1a;
+  border-radius: 20px;
+  margin: 0 14%;
+  margin-bottom: 100px;
+}
+
+#problem-statement h2 {
+  font-size: 30px;
+  margin: 0 0 60px -40px;
+  font-weight: 900;
+  line-height: 40.92px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #ffab46;
+}
+
+/* Problem Statement Section Ends */
+
 /* General styling for the section */
 #user-analysis {
   font-family: "Nunito Sans", sans-serif;
@@ -574,7 +675,7 @@ li strong {
   padding: 80px;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 1px #ffffff1a;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 14%;
   margin-bottom: 100px;
 }
@@ -599,7 +700,7 @@ li strong {
 /* Container for each analysis item */
 .analysis-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   margin-bottom: 150px;
 }
@@ -650,7 +751,7 @@ li strong {
   padding: 80px;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 1px #ffffff1a;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 14%;
   margin-bottom: 100px;
 }
@@ -892,15 +993,17 @@ li strong {
 .findings-of-research .cards-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  justify-content: space-between;
 }
 
 .findings-of-research .cards-container .card {
   position: relative;
-  width: 300px;
-  height: 330px;
-  padding: 30px 16px 0px 16px;
-  margin-bottom: 44px;
+  width: 30%;
+  height: 342px;
+  min-height: max-content;
+
+  margin-bottom: 40px;
+  padding: 34px 16px 14px;
   text-align: center;
   box-sizing: border-box;
 }
@@ -918,7 +1021,7 @@ li strong {
 }
 .findings-of-research .cards-container .card .corner-border {
   position: absolute;
-  bottom: -1px;
+  bottom: 1;
   right: -1px;
   width: 78px;
   height: 78px;
@@ -927,11 +1030,7 @@ li strong {
 .findings-of-research .cards-container .card.card-1 .corner-border {
   border-top: 1px solid #a193f2;
   border-left: 1px solid #a193f2;
-  background: linear-gradient(
-    135deg,
-    rgba(161, 147, 242, 0.5) 50%,
-    #171717 50%
-  );
+  background: linear-gradient(135deg, rgba(161, 147, 242, 0.5), #171717 50%);
 }
 .findings-of-research .cards-container .card.card-2 .corner-border {
   border-top: 1px solid #4dd0e1;
@@ -947,13 +1046,20 @@ li strong {
 .findings-of-research p {
   height: 140px;
   color: #919191;
-  font-size: 20px;
+  font-size: 22px;
 }
 .findings-of-research blockquote {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 4px;
-  height: 80px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.findings-of-research .bottom-info-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 14px;
 }
 
 .show-more-button {
@@ -969,7 +1075,7 @@ li strong {
   color: white;
   border-radius: 10px;
 }
-.hide-button {
+/* .hide-button {
   display: none;
   align-items: center;
   gap: 10px;
@@ -981,17 +1087,11 @@ li strong {
   border: 2px solid white;
   color: white;
   border-radius: 10px;
-}
+} */
 .show-more-button svg {
   width: 40px;
   height: 40px;
   stroke: white; /* Explicitly sets the color */
-}
-.hide-button svg {
-  width: 40px;
-  height: 40px;
-  stroke: white; /* Explicitly sets the color */
-  rotate: -180deg;
 }
 .findings-of-research .cards-container .card:nth-child(-n + 6) {
   display: block; /* Show only the first 6 cards initially */
@@ -1016,9 +1116,6 @@ li strong {
 .step {
   width: 20%;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .step p {
