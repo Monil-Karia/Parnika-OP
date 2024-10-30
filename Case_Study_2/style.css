@@ -578,80 +578,46 @@ li strong {
   font-size: 30px;
   font-weight: 600;
   line-height: 42px;
-  color: #5e4fba;
+  color: #ffab46;
   margin-bottom: 25px;
 }
 
-.insight-list {
+.insights .insights-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 40px;
 }
-
-.insight-item {
-  width: 30%;
-  text-align: left;
-}
-
-.insight-number {
-  font-size: 96px;
-  font-weight: 700;
+.insights .insights-container .insights-card {
+  width: 400px;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+}
+.insights .insights-card .content-1 {
+  font-size: 92px;
+  font-weight: 700;
+}
+.insights .insights-card .content-2 {
+  font-size: 26px;
+  font-weight: 700;
   margin-bottom: 20px;
 }
-
-.insight-item h4 {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 42px;
-  margin-bottom: 10px;
-  color: #ffffff;
-}
-
-.insight-item p {
+.insights .insights-card .content-3 {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 00;
   color: #919191;
-}
-.source-container {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-}
-.source {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  color: #c5c5c5;
-  border: 0.3px solid #3c3c3c;
-  background: #3c3c3c4d;
-  padding: 10px 20px;
-  border-radius: 10px; /* Rounded corners */
-  margin-top: 75px; /* Adjust spacing from the section above */
-}
-.source-container strong {
-  font-family: Nunito Sans;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 42px;
-  font-weight: 700; /* Bold font for the "Source" */
-  color: #ffffff;
-}
-
-.bold {
-  color: white;
 }
 
 /* Problem Statment Section Starts */
 
 #problem-statement {
   font-family: "Nunito Sans", sans-serif;
-  width: 1200px;
-  padding: 80px;
-  color: #fff;
+  color: #c5c5c5;
   background-color: #171717;
-  box-shadow: 2px 2px 20px 1px #ffffff1a;
+  padding: 80px;
   border-radius: 20px;
+  box-shadow: 2px 2px 20px 1px #ffffff1a;
+  width: 1200px;
   margin: 0 14%;
   margin-bottom: 100px;
 }
@@ -662,7 +628,23 @@ li strong {
   font-weight: 900;
   line-height: 40.92px;
   font-family: "Nunito Sans", sans-serif;
-  color: #ffab46;
+  color: #ffa149;
+}
+
+#problem-statement .ps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#problem-statement .ps-container .content-1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+#problem-statement .ps-container .content-2 {
+  font-size: 22px;
+  font-weight: 200;
+  font-style: italic;
+  color: #919191;
 }
 
 /* Problem Statement Section Ends */
