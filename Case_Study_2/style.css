@@ -497,6 +497,16 @@ li strong {
 
 /* Desk Research Code Ends */
 
+/* Desk Research starts */
+
+#type-of-research h3 {
+  color: #ffab46;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+/* Desk Research ends */
 /* Literature Review Code starts */
 #literature-review h3 {
   color: #ffab46;
@@ -519,6 +529,7 @@ li strong {
   padding-top: 28px;
   box-sizing: border-box;
   border: 1px solid #ffab46;
+  background-color: rgba(234, 182, 61, 0.1);
 }
 
 #literature-review .review-card .review-card-container {
@@ -650,7 +661,28 @@ li strong {
 /* Problem Statement Section Ends */
 
 /* General styling for the section */
-#user-analysis {
+
+/* Pilot Study Starts */
+.pilot-study-vertical-hr {
+  left: 50%;
+  height: 231px;
+  border: 1px solid #dcdcdc;
+}
+
+.pilot-divider {
+  border: 0;
+  height: 2px;
+  background: #dcdcdc;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#pilot-study .highlight-word {
+  font-weight: 700;
+  color: white;
+}
+
+#pilot-study {
   font-family: "Nunito Sans", sans-serif;
   color: #c5c5c5;
   background-color: #171717;
@@ -662,23 +694,242 @@ li strong {
   margin-bottom: 100px;
 }
 
-#user-analysis h2 {
+#pilot-study h2 {
   font-size: 30px;
   margin: 0 0 60px -40px;
   font-weight: 900;
   line-height: 40.92px;
   font-family: "Nunito Sans", sans-serif;
-  color: #5c50b4;
+  color: #ffab46;
 }
 
-.user-analysis-section p {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32.74px;
-  color: #c5c5c5;
-  margin-bottom: 80px;
+#pilot-study .section-1-container {
+  display: flex;
+  flex-direction: column;
+  gap: 84px;
 }
+#pilot-study .pilot-study-info {
+  font-size: 20px;
+  color: #c5c5c5;
+}
+
+#pilot-study h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 42px;
+  color: #ffab46;
+  margin-bottom: 25px;
+}
+#pilot-study .inside-content {
+  display: flex;
+  flex-direction: row;
+}
+
+#pilot-study .content-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-right: 106px;
+}
+#pilot-study .content-1 .interview-info-content-1 {
+  display: flex;
+  flex-direction: column;
+}
+#pilot-study .content-1 .interview-info-content-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+#pilot-study .content-2 {
+  display: flex;
+  margin-left: 56px;
+}
+#pilot-study .content-2 .stackholders-info-content-1 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+#pilot-study .content-2 .stackholders-info-content-1 .info {
+  display: flex;
+  flex-direction: column;
+}
+
+#pilot-study .content-2 .stackholders-info-content-2 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+#pilot-study .content-3 .avg-time {
+  display: flex;
+  flex-direction: column;
+  margin-left: 56px;
+}
+#pilot-study .bold-type {
+  font-weight: 800;
+  font-size: 20px;
+}
+#pilot-study .normal-type {
+  font-weight: 400;
+  font-size: 20px;
+  color: #919191;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#pilot-study .section-2-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#pilot-study .section-2-container .objective-points {
+  margin-left: 40px;
+}
+#pilot-study .section-2-container .objective-points li {
+  font-size: 20px;
+  color: #919191;
+}
+#pilot-study .section-2-container .objective-points span {
+  font-weight: 700;
+  color: white;
+}
+
+#pilot-study .research-info {
+  font-size: 20px;
+  color: #919191;
+  margin-bottom: 66px;
+}
+#pilot-study .chart-container {
+  width: 1033px;
+  padding: 40px;
+  border: 1px solid #ffab46;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+#pilot-study .chart-container .box-content {
+  padding: 15px 24px;
+  border: 1px solid #ffab46;
+  background-color: rgba(60, 60, 60, 0.3);
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#pilot-study .section-3-container .content-info {
+  margin: 50px 0px 50px 30px;
+  font-size: 20px;
+  color: #919191;
+  font-weight: 400;
+}
+#pilot-study .section-3-container .content-info span {
+  color: white;
+  font-weight: 700;
+}
+
+#pilot-study .stakeholders-research-card-container {
+  width: 1033px;
+  padding: 64px 27px;
+  border: 1px solid #ffab46;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+#pilot-study .stakeholders-research-card-container .all-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+#pilot-study .stakeholders-research-card-container .all-cards .card-1 {
+  width: 304px;
+  height: 326px;
+  border: 1px solid #ffab46;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 12px;
+}
+
+#pilot-study .stakeholders-research-card-container .all-cards .card-1 .heading {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#pilot-study .stakeholders-research-card-container .all-cards .card-1 li {
+  margin-left: 16px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #919191;
+}
+
+#pilot-study .stakeholders-research-card-container .all-cards .card-1 li span {
+  font-weight: 700;
+  color: white;
+}
+
+#pilot-study .stakeholders-research-card-container .box-content {
+  padding: 15px 24px;
+  border: 1px solid #ffab46;
+  background-color: rgba(60, 60, 60, 0.3);
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#pilot-study .insights-container {
+  display: flex;
+  flex-direction: row;
+  gap: 78px;
+}
+
+#pilot-study .insights-container .content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 280px;
+  margin-top: 0px;
+}
+
+#pilot-study .insights-container .content-container .number {
+  font-size: 76px;
+  font-weight: bold;
+}
+
+#pilot-study .insights-container .content-container .pilot-content-1 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+#pilot-study .insights-container .content-container .pilot-content-2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #919191;
+}
+
+#pilot-study .image-container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 82px;
+  margin-bottom: 73px;
+}
+
+/* Pilot Study Ends */
+
 /* Container for each analysis item */
 .analysis-item {
   display: flex;
@@ -968,80 +1219,6 @@ li strong {
 
 .objective-card-3 ul li strong {
   color: #ffffff; /* Use purple for emphasis */
-}
-
-/* Findings of Reseaarch section  */
-
-.findings-of-research .cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.findings-of-research .cards-container .card {
-  position: relative;
-  width: 30%;
-  height: 342px;
-  min-height: max-content;
-
-  margin-bottom: 40px;
-  padding: 34px 16px 14px;
-  text-align: center;
-  box-sizing: border-box;
-}
-.findings-of-research .cards-container .card.card-1 {
-  border: 1px solid #a193f2;
-  background-color: rgba(161, 147, 242, 0.1);
-}
-.findings-of-research .cards-container .card.card-2 {
-  border: 1px solid #4dd0e1;
-  background-color: rgba(77, 208, 225, 0.1);
-}
-.findings-of-research .cards-container .card.card-3 {
-  border: 1px solid #516cbe;
-  background-color: rgba(81, 108, 190, 0.1);
-}
-.findings-of-research .cards-container .card .corner-border {
-  position: absolute;
-  bottom: 1;
-  right: -1px;
-  width: 78px;
-  height: 78px;
-  margin-top: 20px;
-}
-.findings-of-research .cards-container .card.card-1 .corner-border {
-  border-top: 1px solid #a193f2;
-  border-left: 1px solid #a193f2;
-  background: linear-gradient(135deg, rgba(161, 147, 242, 0.5), #171717 50%);
-}
-.findings-of-research .cards-container .card.card-2 .corner-border {
-  border-top: 1px solid #4dd0e1;
-  border-left: 1px solid #4dd0e1;
-  background: linear-gradient(135deg, rgba(77, 208, 225, 0.5), #171717 50%);
-}
-.findings-of-research .cards-container .card.card-3 .corner-border {
-  border-top: 1px solid #516cbe;
-  border-left: 1px solid #516cbe;
-  background: linear-gradient(135deg, rgba(81, 108, 190, 0.5), #171717 50%);
-}
-
-.findings-of-research p {
-  height: 140px;
-  color: #919191;
-  font-size: 22px;
-}
-.findings-of-research blockquote {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-.findings-of-research .bottom-info-style {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  margin-bottom: 14px;
 }
 
 .show-more-button {
