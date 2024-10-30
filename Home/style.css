@@ -208,9 +208,12 @@ nav {
   min-height: 100vh;
 
   /* Layering the backgrounds */
-  background: url("../Images/Home_Page/Grid_Home.png") repeat,
-    /* Static Grid image */
-      linear-gradient(to right, rgba(0, 28, 48, 0.7), rgba(52, 12, 24, 0.7)),
+  background: 
+    /* Static Grid image */ linear-gradient(
+      to right,
+      rgba(0, 28, 48, 0.7),
+      rgba(52, 12, 24, 0.7)
+    ),
     /* Gradient */ url("../Images/Home_Page/BG WEBSITE.gif") no-repeat center
       center/cover; /* GIF background */
   background-attachment: fixed, scroll, scroll;

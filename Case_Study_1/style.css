@@ -406,7 +406,7 @@ li strong {
 
 #deskresearch {
   font-family: "Nunito Sans", sans-serif;
-  max-width: 1660px;
+  width: 1200px;
   padding: 80px;
   color: #fff;
   background-color: #171717;
@@ -574,7 +574,7 @@ li strong {
   padding: 80px;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 1px #ffffff1a;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 14%;
   margin-bottom: 100px;
 }
@@ -650,7 +650,7 @@ li strong {
   padding: 80px;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 1px #ffffff1a;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 14%;
   margin-bottom: 100px;
 }
@@ -709,7 +709,7 @@ li strong {
   padding: 80px;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 1px #ffffff1a;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 14%;
   margin-bottom: 100px;
 }
@@ -892,7 +892,7 @@ li strong {
 .findings-of-research .cards-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 45px;
 }
 
 .findings-of-research .cards-container .card {
@@ -1155,7 +1155,7 @@ li strong {
   padding: 80px;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 1px #ffffff1a;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 14%;
   margin-bottom: 100px;
 }
@@ -1190,7 +1190,7 @@ li strong {
   padding: 80px;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 1px #ffffff1a;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 14%;
   margin-bottom: 100px;
 }
@@ -1374,7 +1374,7 @@ li strong {
   padding: 80px;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 1px #ffffff1a;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 14%;
   margin-bottom: 100px;
 }
@@ -1410,7 +1410,7 @@ li strong {
   padding: 80px;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 1px #ffffff1a;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 14%;
   margin-bottom: 100px;
 }
@@ -1451,7 +1451,7 @@ li strong {
   padding: 80px;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 1px #ffffff1a;
-  max-width: 1200px;
+  width: 1200px;
 }
 #usertesting h2 {
   font-size: 30px;
@@ -1491,7 +1491,7 @@ li strong {
   padding: 80px;
   border-radius: 20px;
   box-shadow: 2px 2px 20px 1px #ffffff1a;
-  max-width: 1200px;
+  width: 1200px;
 }
 
 #learnings p {
@@ -1523,13 +1523,6 @@ li strong {
   margin: 96px 14%;
 }
 
-#end-cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .end-card {
   border-radius: 20px;
   opacity: 1;
@@ -1537,12 +1530,11 @@ li strong {
   background-color: #171717;
   box-shadow: 2px 2px 20px 1px #ffffff1a;
   overflow: hidden;
-  max-width: 1203px;
+  width: 1200px;
   height: 440px;
   padding: 41px;
-  padding-top: 37px;
-  width: 100%;
   align-items: center;
+  margin: 0 14%;
 }
 
 .end-card-content {
@@ -1599,7 +1591,7 @@ li strong {
 }
 .end-button {
   font-family: "Nunito Sans", sans-serif;
-  max-width: 330px;
+  width: 330px;
   display: flex;
   align-items: center;
   justify-content: center;
