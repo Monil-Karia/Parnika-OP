@@ -137,7 +137,7 @@ nav {
   height: max-content;
   border-radius: 20px;
   backdrop-filter: blur(800px);
-  border: 1px solid #5c50b4;
+  border: 1px solid #ffab46;
 }
 
 .sticky-sidebar ul {
@@ -1309,8 +1309,13 @@ li strong {
 
 /* Primary Research Ends */
 
-/* General Styling for Section */
-#primary-research {
+/* market and competition Study */
+#m-c-study .highlight-word {
+  font-weight: 700;
+  color: white;
+}
+
+#m-c-study {
   font-family: "Nunito Sans", sans-serif;
   color: #c5c5c5;
   background-color: #171717;
@@ -1322,736 +1327,124 @@ li strong {
   margin-bottom: 100px;
 }
 
-#primary-research h2 {
+#m-c-study .mc-info {
+  font-size: 20px;
+  color: #c5c5c5;
+}
+
+#m-c-study h2 {
   font-size: 30px;
   margin: 0 0 60px -40px;
   font-weight: 900;
   line-height: 40.92px;
   font-family: "Nunito Sans", sans-serif;
-  color: #5c50b4;
+  color: #ffab46;
 }
 
-#primary-research h3 {
+#m-c-study h3 {
   font-family: "Nunito Sans", sans-serif;
   font-size: 30px;
   font-weight: 600;
   line-height: 42px;
-  color: #5e4fba;
+  color: #ffab46;
   margin-bottom: 25px;
 }
 
-.horizontal-hr {
-  border: 0;
-  height: 1px;
-  border: 1px solid #dcdcdc;
-  margin: 40px 0;
-}
-.vertical-hr {
-  left: 50%;
-  height: 330px;
-  border: 1px solid #dcdcdc;
-  margin-right: 120px;
-}
-.left,
-.right strong {
-  font-size: 20px;
-  font-weight: 800;
-  line-height: 32.74px;
-  color: #ffffff;
-}
-
-.left {
-  width: 20%;
-}
-.left-row-1 {
-  margin-bottom: 100px;
-}
-.left,
-.right p {
-  font-size: 20px;
-  font-weight: 400;
-}
-.right {
-  width: 60%;
+#m-c-study .curr-trends {
   display: flex;
   flex-direction: column;
-}
-.first-row {
-  display: flex;
-  gap: 170px;
-  margin-bottom: 40px;
-}
-.second-row {
-  display: flex;
-  gap: 130px;
-  margin-bottom: 30px;
-}
-.third-row {
-  display: flex;
-  gap: 100px;
-  margin-bottom: 30px;
-}
-/* Method of Research Section */
-.method-research {
-  margin-bottom: 40px;
+  gap: 63px;
+  margin-top: 32px;
 }
 
-.research-details {
+#m-c-study .curr-trends .four-box-container {
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
-.research-details p {
-  margin-bottom: 10px;
-}
-
-.research-details strong {
-  color: #ffffff; /* White for bold text */
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 127px;
+  margin-left: 161px;
 }
 
-/* Objective of the Research Section */
-.objective-research {
-  margin-top: 30px;
-}
-
-.objectives-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 25px;
-}
-
-.objective-card-1 {
-  padding: 30px;
+#m-c-study .curr-trends .four-box-container .box-1 {
+  width: 312px;
+  height: 325px;
+  border: 1px solid #ffab46;
   border-radius: 20px;
-  background-color: rgba(60, 60, 60, 0.1);
-  border: 1px solid #a193f2;
-  width: 32%;
-}
-.objective-card-1 h4 {
-  text-align: center;
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 40.92px;
-}
-.objective-card-2 {
-  padding: 30px;
-  background-color: rgba(60, 60, 60, 0.1);
-  border-radius: 20px;
-  border: 1px solid #4dd0e1;
-  width: 32%;
-}
-.objective-card-2 h4 {
-  text-align: center;
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 40.92px;
-}
-.objective-card-3 {
-  padding: 30px;
-  border-radius: 20px;
-  background-color: #3c3c3c1a;
-  border: 1px solid #516cbe;
-  width: 32%;
-  background-color: rgba(60, 60, 60, 0.1);
-}
-.objective-card-3 h4 {
-  text-align: center;
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 40.92px;
-}
-
-.objective-card-1 ul li {
-  font-size: 20px;
-  line-height: 32.74px;
-  margin-bottom: 10px;
-  color: #919191;
-}
-
-.objective-card-1 ul li strong {
-  color: #ffffff; /* Use purple for emphasis */
-}
-.objective-card-2 ul li {
-  font-size: 20px;
-  line-height: 32.74px;
-  margin-bottom: 10px;
-  color: #919191;
-}
-
-.objective-card-2 ul li strong {
-  color: #ffffff; /* Use purple for emphasis */
-}
-.objective-card-3 ul li {
-  font-size: 20px;
-  line-height: 32.74px;
-  margin-bottom: 10px;
-  color: #919191;
-}
-
-.objective-card-3 ul li strong {
-  color: #ffffff; /* Use purple for emphasis */
-}
-
-.show-more-button {
   display: flex;
+  flex-direction: column;
+  padding: 0px 22px;
   align-items: center;
-  gap: 10px;
-  margin: 20px auto;
-  padding: 10px 20px;
-  font-size: 24px;
-  cursor: pointer;
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;
-  border-radius: 10px;
-}
-/* .hide-button {
-  display: none;
-  align-items: center;
-  gap: 10px;
-  margin: 20px auto;
-  padding: 10px 20px;
-  font-size: 24px;
-  cursor: pointer;
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;
-  border-radius: 10px;
-} */
-.show-more-button svg {
-  width: 40px;
-  height: 40px;
-  stroke: white; /* Explicitly sets the color */
-}
-.findings-of-research .cards-container .card:nth-child(-n + 6) {
-  display: block; /* Show only the first 6 cards initially */
-}
-.findings-of-research .cards-container .card {
-  display: none; /* Hide all cards by default */
+  background-color: rgba(60, 60, 60, 0.1);
 }
 
-.horizontal-hr-2 {
-  border: 0;
-  height: 1px;
-  border: 1px solid #dcdcdc;
-  margin: 49px 0;
+#m-c-study .curr-trends .box-1 .curr-trends-content-1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 22px;
 }
-.journey-steps {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+
+#m-c-study .curr-trends .box-1 .curr-trends-content-2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 22px;
+  text-align: center;
+  color: #919191;
+  height: 80px;
+}
+
+#m-c-study .curr-trends .box-1 .curr-trends-icon {
+  margin-top: 77px;
+}
+
+#m-c-study .curr-info {
+  font-size: 20px;
+  color: #c5c5c5;
   margin-bottom: 60px;
 }
 
-.step {
-  width: 20%;
-  text-align: center;
-}
-
-.step p {
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 400;
-  line-height: 34.74px;
-  margin-top: 10px;
-  font-size: 20px;
-  color: #919191;
-}
-
-/* Icon styling (replace with actual images) */
-.icon {
-  width: 120px;
-  height: 120px;
-  background-size: cover;
-  margin: 0;
-}
-
-/* Custom icons for each step */
-.query-icon {
-  background-image: url("../Images/Case_Study_1/User_jouney_icon.png"); /* Replace with your actual image path */
-}
-
-.uncomfortable-icon {
-  margin-top: 120px;
-  background-image: url("../Images/Case_Study_1/chat-bot.png"); /* Replace with your actual image path */
-}
-
-.internet-icon {
-  background-image: url("../Images/Case_Study_1/screen-share.png "); /* Replace with your actual image path */
-}
-
-.invalid-info-icon {
-  margin-top: 120px;
-  background-image: url("../Images/Case_Study_1/paper-scroll.png"); /* Replace with your actual image path */
-}
-
-/* Styling for the emotions bar */
-.emotions-bar {
-  font-family: "Nunito Sans", sans-serif;
-  background: linear-gradient(
-    91.09deg,
-    rgba(194, 184, 255, 0.1) 0.51%,
-    rgba(182, 172, 246, 0.1) 99.21%
-  );
-  border: 1px solid #a193f2;
-  padding: 15px;
-  border-radius: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 20px;
-  color: #ffffff;
-  font-weight: 600;
-  line-height: 32.74px;
-  height: 110px;
-}
-
-.step strong {
-  color: #ffffff; /* Use purple for emphasis */
-}
-.emotions-bar span {
-  padding: 5px 10px;
-}
-.small-circle {
-  border-radius: 50%;
-  background-color: #5e4fba;
-  height: 12px;
-  width: 12px;
-}
-
-/* Container for insights */
-
-.insights-container h2 {
-  color: #726ed3;
-  font-size: 20px;
-  margin-bottom: 30px;
-  text-align: left;
-}
-
-/* Grid for insights */
-.insights-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
-}
-
-.insight {
-  padding: 20px;
-  border-radius: 10px;
-  position: relative;
-  width: 70%;
-}
-
-/* Numbers */
-.insight h5 {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 96px;
-  font-weight: 700;
-  line-height: 130.94px;
-  color: #ffffff;
-  top: -20px;
-  left: -20px;
-}
-
-.insight h4 {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 42px;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-
-.insight p {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32.74px;
-  color: #919191;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .insights-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-#how-might-we {
-  font-family: "Nunito Sans", sans-serif;
-  color: #c5c5c5;
-  background-color: #171717;
-  padding: 80px;
-  border-radius: 20px;
-  box-shadow: 2px 2px 20px 1px #ffffff1a;
-  max-width: 1200px;
-  margin: 0 14%;
-  margin-bottom: 100px;
-}
-#how-might-we h2 {
-  font-size: 30px;
-  margin: 0 0 60px -40px;
-  font-weight: 900;
-  line-height: 40.92px;
-  font-family: "Nunito Sans", sans-serif;
-  color: #5c50b4;
-}
-.perspective {
-  margin-bottom: 70px;
-}
-.perspective h3 {
-  color: #919191;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32.74px;
-  margin-bottom: 20px;
-}
-.perspective p {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 40.92px;
-  color: #ffffff;
-}
-#ideation {
-  font-family: "Nunito Sans", sans-serif;
-  color: #c5c5c5;
-  background-color: #171717;
-  padding: 80px;
-  border-radius: 20px;
-  box-shadow: 2px 2px 20px 1px #ffffff1a;
-  max-width: 1200px;
-  margin: 0 14%;
-  margin-bottom: 100px;
-}
-#ideation h2 {
-  font-size: 30px;
-  margin: 0 0 60px -40px;
-  font-weight: 900;
-  line-height: 40.92px;
-  font-family: "Nunito Sans", sans-serif;
-  color: #5c50b4;
-}
-#ideation h3 {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 42px;
-  color: #5e4fba;
-  margin-bottom: 25px;
-}
-.ideation-intro {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32.74px;
-  color: #c5c5c5;
-  margin-bottom: 50px;
-}
-.idea-exploration {
-  margin-left: 40px;
-  width: 90%;
-}
-.idea-exploration-img {
-  max-width: 1000px;
-  max-height: 892px;
-}
-.idea-exploration p {
-  margin-top: 40px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32.74px;
-}
-.idea-exploration strong {
-  color: #ffffff;
-  font-weight: 700;
-}
-/* Container for the entire section */
-.content-container {
-  font-family: "Nunito Sans", sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  margin-top: 40px;
-}
-
-/* Left side (numbered list) */
-.left-side {
-  width: 40%;
-  margin-right: 20px;
-}
-
-.numbered-item {
-  margin-bottom: 30px;
-}
-
-.numbered-item h5 {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 80px;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.numbered-item p {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32.74px;
-  color: #919191;
-}
-.numbered-item strong {
-  color: #ffffff; /* Use purple for emphasis */
-  font-weight: 700;
-}
-/* Right side (image of the graph) */
-.right-side-ideation {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.right-side-ideaition img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Responsive Design for smaller screens */
-@media (max-width: 768px) {
-  .content-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .right-side {
-    margin-top: 20px;
-    width: 100%;
-  }
-
-  .right-side img {
-    width: 100%;
-  }
-}
-
-.concept-development p {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32.74px;
-  color: #919191;
-}
-.concept-development strong {
-  color: #ffffff;
-  font-weight: 700;
-}
-
-.moscow-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns for the four cards */
-  gap: 60px;
-  margin-top: 20px;
-}
-
-/* Card styles */
-.moscow-card {
-  padding: 10px;
-  border-radius: 15px;
-  background-color: rgba(60, 60, 60, 0.1);
-}
-
-/* Specific card color themes */
-.mo-card {
-  border: 1px solid #85e0a3;
-}
-
-.s-card {
-  border: 1px solid #ffe205; /* Yellow border for S */
-}
-
-.co-card {
-  border: 1px solid #ffa149; /* Orange border for Co */
-}
-
-.w-card {
-  border: 1px solid #d93c64; /* Red border for W */
-}
-
-/* Card headings */
-.moscow-card h4 {
-  color: #ffffff;
-  font-size: 22px;
-  font-weight: 800;
-  margin-bottom: 0px;
-}
-
-/* List styles */
-.moscow-card ul {
-  padding-left: 20px;
-  padding-right: 20px;
-  list-style-type: decimal;
-}
-
-.moscow-card ul li {
-  color: #919191;
-  font-size: 22px;
-  font-weight: 400;
-  position: relative;
-}
-
-#infoarch {
-  font-family: "Nunito Sans", sans-serif;
-  color: #c5c5c5;
-  background-color: #171717;
-  padding: 80px;
-  border-radius: 20px;
-  box-shadow: 2px 2px 20px 1px #ffffff1a;
-  max-width: 1200px;
-  margin: 0 14%;
-  margin-bottom: 100px;
-}
-#infoarch h2 {
-  font-size: 30px;
-  margin: 0 0 60px -40px;
-  font-weight: 900;
-  line-height: 40.92px;
-  font-family: "Nunito Sans", sans-serif;
-  color: #5c50b4;
-}
-#infoarch h3 {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 42px;
-  color: #5e4fba;
-  margin-bottom: 25px;
-}
-#infoarch p {
-  color: #c5c5c5;
-  margin-top: 40px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32.74px;
-  margin-bottom: 30px;
-}
-
-#visualdesign {
-  font-family: "Nunito Sans", sans-serif;
-  color: #c5c5c5;
-  background-color: #171717;
-  padding: 80px;
-  border-radius: 20px;
-  box-shadow: 2px 2px 20px 1px #ffffff1a;
-  max-width: 1200px;
-  margin: 0 14%;
-  margin-bottom: 100px;
-}
-#visualdesign h2 {
-  font-size: 30px;
-  margin: 0 0 60px -40px;
-  font-weight: 900;
-  line-height: 40.92px;
-  font-family: "Nunito Sans", sans-serif;
-  color: #5c50b4;
-}
-#visualdesign h3 {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 42px;
-  color: #5e4fba;
-  margin-bottom: 25px;
-}
-#visualdesign p {
-  color: #c5c5c5;
-  margin-top: 40px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32.74px;
-  margin-bottom: 30px;
-}
-#finalconcepts {
-  margin: 0 14%;
-  margin-bottom: 100px;
-}
-#usertesting {
-  margin: 0 14%;
-  margin-bottom: 100px;
-  font-family: "Nunito Sans", sans-serif;
-  color: #c5c5c5;
-  background-color: #171717;
-  padding: 80px;
-  border-radius: 20px;
-  box-shadow: 2px 2px 20px 1px #ffffff1a;
-  max-width: 1200px;
-}
-#usertesting h2 {
-  font-size: 30px;
-  margin: 0 0 60px -40px;
-  font-weight: 900;
-  line-height: 40.92px;
-  font-family: "Nunito Sans", sans-serif;
-  color: #5c50b4;
-}
-#usertesting {
-  margin: 0 14%;
-  margin-bottom: 100px;
-}
-.usertesting-container {
-  display: flex;
-  justify-content: center;
+#m-c-study .curr-tools .center-box-content {
   width: 100%;
-}
-.usertesting {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  color: #ffffff;
-  border: 0.3px solid #3c3c3c;
-  background: #3c3c3c4d;
-  padding: 10px 60px;
-  border-radius: 10px; /* Rounded corners */
-  line-height: 32.74px;
+  display: flex;
+  justify-content: center;
+  margin-top: 72px;
 }
 
-#learnings {
-  margin: 0 14%;
-  margin-bottom: 100px;
-  font-family: "Nunito Sans", sans-serif;
-  color: #c5c5c5;
-  background-color: #171717;
-  padding: 80px;
+#m-c-study .curr-tools .box-content {
+  padding: 15px 24px;
+  border: 1px solid #ffab46;
+  background-color: rgba(60, 60, 60, 0.3);
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  width: 631px;
+}
+
+#m-c-study .curr-info .responsive-img-1 {
+  max-width: 1085px;
+  height: auto;
+  width: auto;
+}
+
+#m-c-study .graph-container .border-component {
+  border: 1px solid #ffab46;
+  padding: 95px;
   border-radius: 20px;
-  box-shadow: 2px 2px 20px 1px #ffffff1a;
-  max-width: 1200px;
 }
 
-#learnings p {
-  color: #c5c5c5;
-  margin-top: 40px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32.74px;
-  margin-bottom: 30px;
-}
-#learnings h2 {
-  font-size: 30px;
-  margin: 0 0 60px -40px;
-  font-weight: 900;
-  line-height: 40.92px;
-  font-family: "Nunito Sans", sans-serif;
-  color: #5c50b4;
-}
-#learnings ul li {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 40.92px;
-  margin-left: 20px;
+#m-c-study .curr-info .responsive-img-2 {
+  border-radius: 1px solid white;
 }
 
-.horizontal-hr-3 {
-  border: 0;
-  border: 20px solid #171717;
-  margin: 96px 14%;
+#m-c-study .graph-container {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  align-items: center;
 }
+
+/* market and competiton study ends */
 
 #end-cards {
   display: flex;
