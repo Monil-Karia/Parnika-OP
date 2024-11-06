@@ -703,17 +703,17 @@ li strong {
   color: #ffab46;
 }
 
-#pilot-study .section-1-container {
+.section-1-container {
   display: flex;
   flex-direction: column;
   gap: 84px;
 }
-#pilot-study .pilot-study-info {
+.pilot-study-info {
   font-size: 20px;
   color: #c5c5c5;
 }
 
-#pilot-study h3 {
+h3 {
   font-family: "Nunito Sans", sans-serif;
   font-size: 30px;
   font-weight: 600;
@@ -721,56 +721,56 @@ li strong {
   color: #ffab46;
   margin-bottom: 25px;
 }
-#pilot-study .inside-content {
+.inside-content {
   display: flex;
   flex-direction: row;
 }
 
-#pilot-study .content-1 {
+.content-1 {
   display: flex;
   flex-direction: column;
   gap: 40px;
   margin-right: 106px;
 }
-#pilot-study .content-1 .interview-info-content-1 {
+.content-1 .interview-info-content-1 {
   display: flex;
   flex-direction: column;
 }
-#pilot-study .content-1 .interview-info-content-2 {
+.content-1 .interview-info-content-2 {
   display: flex;
   flex-direction: column;
 }
 
-#pilot-study .content-2 {
+.content-2 {
   display: flex;
   margin-left: 56px;
 }
-#pilot-study .content-2 .stackholders-info-content-1 {
+.content-2 .stackholders-info-content-1 {
   display: flex;
   flex-direction: column;
   margin-right: 10px;
 }
-#pilot-study .content-2 .stackholders-info-content-1 .info {
+.content-2 .stackholders-info-content-1 .info {
   display: flex;
   flex-direction: column;
 }
 
-#pilot-study .content-2 .stackholders-info-content-2 {
+.content-2 .stackholders-info-content-2 {
   display: flex;
   flex-direction: column;
   margin-right: 32px;
 }
 
-#pilot-study .content-3 .avg-time {
+.content-3 .avg-time {
   display: flex;
   flex-direction: column;
   margin-left: 56px;
 }
-#pilot-study .bold-type {
+ .bold-type {
   font-weight: 800;
   font-size: 20px;
 }
-#pilot-study .normal-type {
+.normal-type {
   font-weight: 400;
   font-size: 20px;
   color: #919191;
@@ -779,19 +779,19 @@ li strong {
   gap: 4px;
 }
 
-#pilot-study .section-2-container {
+.section-2-container {
   display: flex;
   flex-direction: column;
 }
 
-#pilot-study .section-2-container .objective-points {
+.section-2-container .objective-points {
   margin-left: 40px;
 }
-#pilot-study .section-2-container .objective-points li {
+.section-2-container .objective-points li {
   font-size: 20px;
   color: #919191;
 }
-#pilot-study .section-2-container .objective-points span {
+.section-2-container .objective-points span {
   font-weight: 700;
   color: white;
 }
@@ -1411,7 +1411,7 @@ li strong {
 
 #m-c-study .curr-tools .box-content {
   padding: 15px 24px;
-  border: 1px solid #ffab46;
+  border: 1px solid rgba(255,171,70, 0.3);
   background-color: rgba(60, 60, 60, 0.3);
   color: white;
   border-radius: 10px;
@@ -1683,6 +1683,351 @@ li strong {
   color: #ffffff;
   font-weight: 700;
 }
+
+.box-container{
+  border: 1px solid rgba(255,171,70, 0.3);
+  margin: 90px 40px;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.scammer-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.scammer-subclass-1{
+  display: flex;
+  align-items: center;
+  gap:20px;
+}
+.scammer-subclass-1 .big-text{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 130.94px;
+  width:10%;
+}
+
+/* Findings Research Cards */
+.box-container .scammer-container .scammer-subclass-1 .all-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 54px;
+  margin-top: 40px;
+}
+
+.box-container .scammer-container  .scammer-subclass-1 .review-card {
+  font-family: 'Inter' , sans-serif;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  border: 1px solid #ffab46;
+  background-color: rgba(234, 182, 61, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.box-container .scammer-container  .scammer-subclass-1 .all-cards .review-card .review-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:30px 0px;
+}
+
+.box-container .scammer-container  .scammer-subclass-1 .all-cards .review-card
+  .review-card-container
+  .content-1-info {
+  font-family: 'Inter' , sans-serif;
+  padding:10px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -0.011em;
+  color: #919191;
+  text-align: center;
+}
+
+.box-container .scammer-container  .scammer-subclass-1 .all-cards .review-card .corner-border {
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin-top: 150px;
+  margin-left: 150px;
+  border-top: 1px solid #ffab46;
+  border-left: 1px solid #ffab46;
+  background: linear-gradient(135deg, rgba(255, 171, 70, 0.5) 50%, #171717 50%);
+}
+.box-content {
+  margin-top:50px;
+  padding: 15px 24px;
+  border: 1px solid rgba(255,171,70, 0.3);
+  background-color: rgba(60, 60, 60, 0.3);
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  width: 631px;
+}
+.cd-text{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-container-mash{
+  border: 1px solid rgba(255,171,70, 0.3);
+  margin: 90px 40px;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.box-container-grid {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box-column-1 , .box-column-2{
+  gap:20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 820px;
+}
+
+.box-container-grid .box-column-1 img{
+  width:580px;
+  height: 400px;
+}
+.box-container-grid .box-column-2 .long-img img{
+  width:360px;
+  height: 559px;
+}
+.box-container-grid .box-column-2 .small-img img{
+  width:360px;
+  height: 231px;
+}
+
+#infoarch {
+  font-family: "Nunito Sans", sans-serif;
+  color: #c5c5c5;
+  background-color: #171717;
+  padding: 80px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px 1px #ffffff1a;
+  width: 1200px;
+  margin: 0 14%;
+  margin-bottom: 100px;
+}
+#infoarch h2 {
+  font-size: 30px;
+  margin: 0 0 60px -40px;
+  font-weight: 900;
+  line-height: 40.92px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #ffab46;
+}
+
+#finalconcepts {
+  margin: 0 14%;
+  margin-bottom: 100px;
+}
+#finalconcepts h2 {
+  font-size: 30px;
+  margin: 0 0 60px -40px;
+  font-weight: 900;
+  line-height: 40.92px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #ffab46;
+}
+
+.solution-sneak-peak {
+  font-family: "Nunito Sans", sans-serif;
+  width: 1200px;
+  padding: 80px; /* Optional: Adjust padding as needed */
+  color: #fff;
+  background-color: #171717;
+  box-shadow: 2px 2px 20px 1px #ffffff1a;
+  margin-top: 62px;
+  border-radius: 20px;
+}
+.solution-sneak-peak h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: #ffab46;
+  margin: 0 0 60px -40px;
+}
+
+.solution-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.solution-item {
+  display: flex;
+  justify-content: space-between; /* Space between image and text */
+  align-items: center;
+  max-width: 1200px; /* Adjust as per your requirement */
+}
+
+.solution-image img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+.solution-text {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Vertically center the content */
+  align-items: flex-start; /* Horizontally center the content */
+  padding: 6%;
+}
+
+.interative-prototype-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:20px;
+}
+/* Button styling for both buttons */
+.button {
+  font-family: 'Nunito Sans', sans-serif;
+  max-width: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 24px;
+  margin-right: 10px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Icon Box */
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px; /* Add space between text and icon */
+  border: 1px solid white;
+  border-radius: 4px; /* Rounded box */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Invert the black arrow icon to white */
+.icon-box img {
+  width: 16px; /* Adjust icon size */
+  height: 16px;
+  filter: invert(1); /* Inverts color from black to white */
+  transition: filter 0.3s ease;
+}
+.final-concepts-image-container{
+  border: 1px solid rgba(255,171,70, 0.3);
+  margin: 90px 10px;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.grid-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+}
+.grid-container img{
+  width: 170px;
+  height: 350px;
+}
+.image-grid-item{
+  margin:5px;
+}
+
+.source-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.source {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #919191;
+  background: #3c3c3c4d;
+  padding: 10px 20px;
+  border-radius: 10px; /* Rounded corners */
+  margin-top: 75px; /* Adjust spacing from the section above */
+}
+.source-container strong {
+  font-family: Nunito Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 42px;
+  font-weight: 700; /* Bold font for the "Source" */
+  color: #ffffff;
+}
+
+
+#visualdesign {
+  font-family: "Nunito Sans", sans-serif;
+  color: #c5c5c5;
+  background-color: #171717;
+  padding: 80px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px 1px #ffffff1a;
+  width: 1200px;
+  margin: 0 14%;
+  margin-bottom: 100px;
+}
+#visualdesign h2 {
+  font-size: 30px;
+  margin: 0 0 60px -40px;
+  font-weight: 900;
+  line-height: 40.92px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #ffab46;
+}
+#visualdesign p {
+  color: #c5c5c5;
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32.74px;
+  margin-bottom: 30px;
+}
+
+#usertesting {
+  font-family: "Nunito Sans", sans-serif;
+  color: #c5c5c5;
+  background-color: #171717;
+  padding: 80px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px 1px #ffffff1a;
+  width: 1200px;
+  margin: 0 14%;
+  margin-bottom: 100px;
+}
+#usertesting h2 {
+  font-size: 30px;
+  margin: 0 0 60px -40px;
+  font-weight: 900;
+  line-height: 40.92px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #ffab46;
+}
+
 footer {
   background-color: #202020;
   color: white;
