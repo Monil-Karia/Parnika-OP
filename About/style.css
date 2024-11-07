@@ -353,7 +353,14 @@ header {
 .infinite-crousel .slide-images .even{
   rotate: -15deg;
 }
-
+.infinite-crousel .slide-images p{
+  font-family: 'Nunito Sans' , sans-serif;
+  margin-top:5px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27.28px;
+  color: #49d3ff;
+}
 @keyframes move{
   to{
     transform: 

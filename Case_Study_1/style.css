@@ -12,13 +12,14 @@
 
 body {
   font-family: "Nunito Sans", sans-serif;
-  background: url("../Images/Home_Page/Grid_Home.png") repeat,
+  background:linear-gradient(
+    to right,
+    rgba(0, 28, 48, 0.7),
+    rgba(52, 12, 24, 0.7)
+  ),
     /* Static Grid image */
-      linear-gradient(to right, rgba(0, 28, 48, 0.7), rgba(52, 12, 24, 0.7)),
     /* Gradient */ url("../Images/Work_Page/work_bg.png") no-repeat center
       center/cover;
-  background-attachment: fixed, scroll, scroll;
-  animation: bg-animation 1s linear infinite;
   color: white;
   margin: 0 auto;
 }
