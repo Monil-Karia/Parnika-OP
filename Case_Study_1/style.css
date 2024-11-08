@@ -295,8 +295,8 @@ li strong {
   width: 30px;
   height: 30px;
   margin-right: 8px;
+  vertical-align: top;
 }
-
 @media (max-width: 768px) {
   .project-details {
     flex-direction: column;
@@ -1515,7 +1515,9 @@ li strong {
   border: 20px solid #171717;
   margin: 96px 14%;
 }
-
+#end-game{
+  margin-top:200px;
+}
 .end-card {
   border-radius: 20px;
   opacity: 1;
@@ -1643,7 +1645,6 @@ li strong {
 .end-back-button .end-arrow img.end-arrow-icon {
   width: 25px; /* Adjust arrow size as needed */
   height: 25px; /* Adjust arrow size as needed */
-  filter: invert(1); /* Inverts colors for visibility */
   transform: scaleX(-1);
   color: #49d3ff;
 }

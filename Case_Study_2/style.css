@@ -263,6 +263,9 @@ nav {
 .details {
   width: 323px;
 }
+.details img{
+  vertical-align: top;
+}
 .deliverables {
   width: 396px;
 }
@@ -1448,7 +1451,50 @@ h3 {
 
 /* market and competiton study ends */
 
-#end-cards {
+.end-back-button {
+  margin:0 14%;
+  padding: 8px 12px; /* Add padding for more click area */
+  display: flex;
+  align-items: center;
+  gap: 14px; /* Slightly reduce gap for better balance */
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth hover effect */
+  width: fit-content;
+}
+
+/* Style the arrow only with a border */
+.end-back-button .end-arrow {
+  padding: 4px;
+  border: 2px solid #49d3ff; /* Border around the arrow */
+  display: inline-flex; /* Ensures the arrow image stays centered */
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.end-back-button .end-arrow img.end-arrow-icon {
+  width: 25px; /* Adjust arrow size as needed */
+  height: 25px; /* Adjust arrow size as needed */
+  transform: scaleX(-1);
+  color: #49d3ff;
+}
+.end-button-text a {
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 47.74px;
+  font-size: 35px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #49d3ff;
+}
+.end-back-button:hover .end-button-text {
+  text-decoration: underline;
+  color: #49d3ff;
+}
+#end-game{
+  margin-top:200px;
+}
+.end-cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1485,7 +1531,7 @@ h3 {
   font-family: "Nunito Sans", sans-serif;
   font-style: italic;
   font-weight: 300;
-  color: #e07160;
+  color: #A193F2;
   font-size: 30px;
   margin-bottom: 100px;
 }
@@ -1514,7 +1560,7 @@ h3 {
   align-items: center;
   width: 400px;
   height: 250px;
-  border: 1px solid #e07160;
+  border: 1px solid #A193F2;
   border-radius: 12px;
   margin-bottom: 40px;
 }
@@ -1556,48 +1602,6 @@ h3 {
 #designprocess {
   margin: 0 14%;
   margin-bottom: 100px;
-}
-
-.end-back-button {
-  margin-left: 14%; /* Adjust margin for better alignment */
-  padding: 8px 12px; /* Add padding for more click area */
-  display: flex;
-  align-items: center;
-  gap: 14px; /* Slightly reduce gap for better balance */
-  background-color: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease; /* Smooth hover effect */
-  width: fit-content;
-}
-
-/* Style the arrow only with a border */
-.end-back-button .end-arrow {
-  padding: 4px;
-  border: 2px solid #49d3ff; /* Border around the arrow */
-  display: inline-flex; /* Ensures the arrow image stays centered */
-  border-radius: 8px;
-  align-items: center;
-  justify-content: center;
-}
-
-.end-back-button .end-arrow img.end-arrow-icon {
-  width: 25px; /* Adjust arrow size as needed */
-  height: 25px; /* Adjust arrow size as needed */
-  filter: invert(1); /* Inverts colors for visibility */
-  transform: scaleX(-1);
-  color: #49d3ff;
-}
-.end-button-text a {
-  font-family: "Nunito Sans", sans-serif;
-  line-height: 47.74px;
-  font-size: 35px;
-  font-weight: 700;
-  text-decoration: none;
-  color: #49d3ff;
-}
-.end-back-button:hover .end-button-text {
-  text-decoration: underline;
-  color: #49d3ff;
 }
 
 #how-might-we {
@@ -1790,6 +1794,16 @@ h3 {
   padding: 50px;
   border-radius: 20px;
 }
+.box-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-img img{
+  max-width: 100%;
+  max-height: 100%;
+}
 
 .box-container-grid {
   padding: 40px;
@@ -1837,7 +1851,16 @@ h3 {
   font-family: "Nunito Sans", sans-serif;
   color: #ffab46;
 }
-
+.info-conatiner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-arch img{
+  max-width:100%;
+  max-height:100%;
+  display: block;
+}
 #finalconcepts {
   margin: 0 14%;
   margin-bottom: 100px;
