@@ -12,14 +12,13 @@
 
 body {
   font-family: "Nunito Sans", sans-serif;
-  background:linear-gradient(
-    to right,
-    rgba(0, 28, 48, 0.7),
-    rgba(52, 12, 24, 0.7)
-  ),
-    /* Static Grid image */
-    /* Gradient */ url("../Images/Work_Page/work_bg.png") no-repeat center
-      center/cover;
+  background: linear-gradient(
+      to right,
+      rgba(0, 28, 48, 0.7),
+      rgba(52, 12, 24, 0.7)
+    ),
+    /* Static Grid image */ /* Gradient */
+      url("../Images/Work_Page/work_bg.png") no-repeat center center/cover;
   color: white;
   margin: 0 auto;
 }
@@ -395,15 +394,109 @@ li strong {
     align-items: flex-start;
   }
 }
-
+/* design Process Starts */
 #designprocess {
+  font-family: "Nunito Sans", sans-serif;
+  width: 1200px;
+  padding: 80px;
+  color: #fff;
+  background-color: #171717;
+  box-shadow: 2px 2px 20px 1px #ffffff1a;
+  border-radius: 20px;
   margin: 0 14%;
   margin-bottom: 100px;
 }
-.design-image {
-  max-width: 1200px; /* Fixed width */
-  border-radius: 20px; /* Rounded corners */
+
+#designprocess .design-container {
+  display: flex;
+  flex-direction: column;
 }
+
+#designprocess .numbers-container {
+  display: flex;
+  gap: 172px;
+  font-size: 76px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+#designprocess .squares-container {
+  height: max-content;
+  margin-left: 10px;
+}
+
+#designprocess .line-hori {
+  position: absolute;
+  width: 928px;
+  border: 1px solid rgba(161, 147, 242, 1);
+  margin-top: 40px;
+  z-index: 10;
+}
+#designprocess .squares {
+  position: absolute;
+  display: flex;
+  gap: 172px;
+  margin-left: 6px;
+  margin-top: 18px;
+}
+#designprocess .squares .sq-1 {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #fa4772;
+  rotate: 45deg;
+  background-color: rgba(250, 71, 114, 0.3);
+}
+#designprocess .squares .sq-2 {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #43568f;
+  rotate: 45deg;
+  background-color: rgba(67, 86, 143, 0.3);
+}
+#designprocess .squares .sq-3 {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #ffe205;
+  rotate: 45deg;
+  background-color: rgba(255, 226, 5, 0.3);
+}
+#designprocess .squares .sq-4 {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #006064;
+  rotate: 45deg;
+  background-color: rgba(0, 96, 100, 0.3);
+}
+#designprocess .squares .sq-5 {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #00da4a;
+  rotate: 45deg;
+  background-color: rgba(0, 218, 74, 0.3);
+}
+#designprocess .design-content {
+  margin-top: 100px;
+
+  display: flex;
+  gap: 55px;
+}
+#designprocess .design-content .design-info-1 {
+  width: 160px;
+}
+
+#designprocess .design-content span {
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  justify-content: left;
+}
+#designprocess .design-content li {
+  font-size: 18px;
+  font-weight: 400;
+  color: #919191;
+  margin-left: 18px;
+  margin-top: 10px;
+}
+/* design Process ends */
 
 #deskresearch {
   font-family: "Nunito Sans", sans-serif;
@@ -417,7 +510,7 @@ li strong {
   margin-bottom: 100px;
 }
 
-#deskresearch h2 {
+h2 {
   font-size: 30px;
   margin: 0 0 60px -40px;
   font-weight: 900;
@@ -1515,8 +1608,8 @@ li strong {
   border: 20px solid #171717;
   margin: 96px 14%;
 }
-#end-game{
-  margin-top:200px;
+#end-game {
+  margin-top: 200px;
 }
 .end-card {
   border-radius: 20px;
