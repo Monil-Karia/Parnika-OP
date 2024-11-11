@@ -12,13 +12,13 @@
 
 body {
   font-family: "Nunito Sans", sans-serif;
-  background:    linear-gradient(
-    to right,
-    rgba(0, 28, 48, 0.7),
-    rgba(52, 12, 24, 0.7)
-  ), /* Static Grid image */
-  /* Gradient */ url("../Images/Work_Page/work_bg.png") no-repeat center
-      center/cover;
+  background: linear-gradient(
+      to right,
+      rgba(0, 28, 48, 0.7),
+      rgba(52, 12, 24, 0.7)
+    ),
+    /* Static Grid image */ /* Gradient */
+      url("../Images/Work_Page/work_bg.png") no-repeat center center/cover;
   background-attachment: fixed, scroll, scroll;
   animation: bg-animation 1s linear infinite;
   color: white;
@@ -263,7 +263,7 @@ nav {
 .details {
   width: 323px;
 }
-.details img{
+.details img {
   vertical-align: top;
 }
 .deliverables {
@@ -401,6 +401,13 @@ li strong {
 }
 
 #designprocess {
+  font-family: "Nunito Sans", sans-serif;
+  width: 1200px;
+  padding: 80px;
+  color: #fff;
+  background-color: #171717;
+  box-shadow: 2px 2px 20px 1px #ffffff1a;
+  border-radius: 20px;
   margin: 0 14%;
   margin-bottom: 100px;
 }
@@ -421,7 +428,7 @@ li strong {
   margin-bottom: 100px;
 }
 
-#deskresearch h2 {
+h2 {
   font-size: 30px;
   margin: 0 0 60px -40px;
   font-weight: 900;
@@ -771,7 +778,7 @@ h3 {
   flex-direction: column;
   margin-left: 56px;
 }
- .bold-type {
+.bold-type {
   font-weight: 800;
   font-size: 20px;
 }
@@ -1416,7 +1423,7 @@ h3 {
 
 #m-c-study .curr-tools .box-content {
   padding: 15px 24px;
-  border: 1px solid rgba(255,171,70, 0.3);
+  border: 1px solid rgba(255, 171, 70, 0.3);
   background-color: rgba(60, 60, 60, 0.3);
   color: white;
   border-radius: 10px;
@@ -1452,7 +1459,7 @@ h3 {
 /* market and competiton study ends */
 
 .end-back-button {
-  margin:0 14%;
+  margin: 0 14%;
   padding: 8px 12px; /* Add padding for more click area */
   display: flex;
   align-items: center;
@@ -1491,8 +1498,8 @@ h3 {
   text-decoration: underline;
   color: #49d3ff;
 }
-#end-game{
-  margin-top:200px;
+#end-game {
+  margin-top: 200px;
 }
 .end-cards {
   display: flex;
@@ -1531,7 +1538,7 @@ h3 {
   font-family: "Nunito Sans", sans-serif;
   font-style: italic;
   font-weight: 300;
-  color: #A193F2;
+  color: #a193f2;
   font-size: 30px;
   margin-bottom: 100px;
 }
@@ -1560,7 +1567,7 @@ h3 {
   align-items: center;
   width: 400px;
   height: 250px;
-  border: 1px solid #A193F2;
+  border: 1px solid #a193f2;
   border-radius: 12px;
   margin-bottom: 40px;
 }
@@ -1640,7 +1647,6 @@ h3 {
   color: #ffffff;
 }
 
-
 #ideation {
   font-family: "Nunito Sans", sans-serif;
   color: #c5c5c5;
@@ -1694,29 +1700,29 @@ h3 {
   font-weight: 700;
 }
 
-.box-container{
-  border: 1px solid rgba(255,171,70, 0.3);
+.box-container {
+  border: 1px solid rgba(255, 171, 70, 0.3);
   margin: 90px 40px;
   padding: 50px;
   border-radius: 20px;
 }
 
-.scammer-container{
+.scammer-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.scammer-subclass-1{
+.scammer-subclass-1 {
   display: flex;
   align-items: center;
-  gap:20px;
+  gap: 20px;
 }
-.scammer-subclass-1 .big-text{
-  font-family: 'Nunito Sans', sans-serif;
+.scammer-subclass-1 .big-text {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 96px;
   font-weight: 700;
   line-height: 130.94px;
-  width:10%;
+  width: 10%;
 }
 
 /* Findings Research Cards */
@@ -1728,8 +1734,8 @@ h3 {
   margin-top: 40px;
 }
 
-.box-container .scammer-container  .scammer-subclass-1 .review-card {
-  font-family: 'Inter' , sans-serif;
+.box-container .scammer-container .scammer-subclass-1 .review-card {
+  font-family: "Inter", sans-serif;
   width: 200px;
   height: 200px;
   box-sizing: border-box;
@@ -1740,19 +1746,28 @@ h3 {
   justify-content: flex-start;
   align-items: center;
 }
-.box-container .scammer-container  .scammer-subclass-1 .all-cards .review-card .review-card-container {
+.box-container
+  .scammer-container
+  .scammer-subclass-1
+  .all-cards
+  .review-card
+  .review-card-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding:30px 0px;
+  padding: 30px 0px;
 }
 
-.box-container .scammer-container  .scammer-subclass-1 .all-cards .review-card
+.box-container
+  .scammer-container
+  .scammer-subclass-1
+  .all-cards
+  .review-card
   .review-card-container
   .content-1-info {
-  font-family: 'Inter' , sans-serif;
-  padding:10px;
+  font-family: "Inter", sans-serif;
+  padding: 10px;
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
@@ -1761,7 +1776,12 @@ h3 {
   text-align: center;
 }
 
-.box-container .scammer-container  .scammer-subclass-1 .all-cards .review-card .corner-border {
+.box-container
+  .scammer-container
+  .scammer-subclass-1
+  .all-cards
+  .review-card
+  .corner-border {
   position: absolute;
   width: 51px;
   height: 51px;
@@ -1772,9 +1792,9 @@ h3 {
   background: linear-gradient(135deg, rgba(255, 171, 70, 0.5) 50%, #171717 50%);
 }
 .box-content {
-  margin-top:50px;
+  margin-top: 50px;
   padding: 15px 24px;
-  border: 1px solid rgba(255,171,70, 0.3);
+  border: 1px solid rgba(255, 171, 70, 0.3);
   background-color: rgba(60, 60, 60, 0.3);
   color: white;
   border-radius: 10px;
@@ -1783,24 +1803,24 @@ h3 {
   text-align: center;
   width: 631px;
 }
-.cd-text{
-  display:flex;
+.cd-text {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-.box-container-mash{
-  border: 1px solid rgba(255,171,70, 0.3);
+.box-container-mash {
+  border: 1px solid rgba(255, 171, 70, 0.3);
   margin: 90px 40px;
   padding: 50px;
   border-radius: 20px;
 }
-.box-img{
+.box-img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.box-img img{
+.box-img img {
   max-width: 100%;
   max-height: 100%;
 }
@@ -1811,24 +1831,25 @@ h3 {
   align-items: center;
   justify-content: space-between;
 }
-.box-column-1 , .box-column-2{
-  gap:20px;
-  display:flex;
+.box-column-1,
+.box-column-2 {
+  gap: 20px;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 820px;
 }
 
-.box-container-grid .box-column-1 img{
-  width:580px;
+.box-container-grid .box-column-1 img {
+  width: 580px;
   height: 400px;
 }
-.box-container-grid .box-column-2 .long-img img{
-  width:360px;
+.box-container-grid .box-column-2 .long-img img {
+  width: 360px;
   height: 559px;
 }
-.box-container-grid .box-column-2 .small-img img{
-  width:360px;
+.box-container-grid .box-column-2 .small-img img {
+  width: 360px;
   height: 231px;
 }
 
@@ -1851,14 +1872,14 @@ h3 {
   font-family: "Nunito Sans", sans-serif;
   color: #ffab46;
 }
-.info-conatiner{
+.info-conatiner {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.info-arch img{
-  max-width:100%;
-  max-height:100%;
+.info-arch img {
+  max-width: 100%;
+  max-height: 100%;
   display: block;
 }
 #finalconcepts {
@@ -1917,15 +1938,15 @@ h3 {
   padding: 6%;
 }
 
-.interative-prototype-button{
+.interative-prototype-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top:20px;
+  margin-top: 20px;
 }
 /* Button styling for both buttons */
 .button {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   max-width: 330px;
   display: flex;
   align-items: center;
@@ -1962,26 +1983,26 @@ h3 {
   filter: invert(1); /* Inverts color from black to white */
   transition: filter 0.3s ease;
 }
-.final-concepts-image-container{
-  border: 1px solid rgba(255,171,70, 0.3);
+.final-concepts-image-container {
+  border: 1px solid rgba(255, 171, 70, 0.3);
   margin: 90px 10px;
   padding: 50px;
   border-radius: 20px;
 }
 
-.grid-container{
+.grid-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap:20px;
+  gap: 20px;
 }
-.grid-container img{
+.grid-container img {
   width: 170px;
   height: 350px;
 }
-.image-grid-item{
-  margin:5px;
+.image-grid-item {
+  margin: 5px;
 }
 
 .source-container {
@@ -2007,7 +2028,6 @@ h3 {
   font-weight: 700; /* Bold font for the "Source" */
   color: #ffffff;
 }
-
 
 #visualdesign {
   font-family: "Nunito Sans", sans-serif;
@@ -2071,8 +2091,8 @@ h3 {
 }
 
 /* Numbers */
-.insights-container h3{
-  margin-top:35px;
+.insights-container h3 {
+  margin-top: 35px;
 }
 .insight h5 {
   font-family: "Nunito Sans", sans-serif;
@@ -2097,7 +2117,6 @@ h3 {
   line-height: 32.74px;
   color: #919191;
 }
-
 
 #learnings {
   margin: 0 14%;
