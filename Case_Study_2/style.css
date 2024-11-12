@@ -411,9 +411,9 @@ li strong {
   margin: 0 14%;
   margin-bottom: 100px;
 }
-.design-image {
-  max-width: 1200px; /* Fixed width */
-  border-radius: 20px; /* Rounded corners */
+#designprocess .design-process {
+  display: flex;
+  justify-content: center;
 }
 
 #deskresearch {
